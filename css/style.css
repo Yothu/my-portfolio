@@ -4,10 +4,13 @@
 }
 
 /* ---------------------------------- */
+/*
 
 body {
   border: 2px solid crimson;
 }
+
+*/
 
 /*
 
@@ -26,9 +29,35 @@ body {
 
 
 
-.body {
+.headline {
   background-color: greenyellow;
   border: 1px solid blue;
+}
+
+*/
+
+/*
+
+.primary-text {
+  background-color: lightgreen;
+  opacity: 0.8;
+}
+.name {
+  background-color: lightpink;
+  opacity: 0.8;
+}
+.profession {
+  background-color: lightskyblue;
+  opacity: 0.8;
+}
+.supporting-text {
+  background-color: lightyellow;
+  opacity: 0.8;
+}
+.social {
+  border: 2px solid black;
+  background-color: lightblue;
+  opacity: 0.8;
 }
 
 */
@@ -38,10 +67,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   height: 100vh;
-
-  }
+}
 
 .toolbar {
   display: flex;
@@ -60,13 +87,78 @@ body {
   padding: 11px 24px;
 }
 
-.body {
+.headline {
   flex-basis: 100%;
   background-size: 100% 100%;
   background-position: center top;
   background-repeat: no-repeat;
   background-image: url(../images/background/mobile-portfolio-background-1.png);
   
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
+.primary-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 40px;
+}
 
+.name {
+  color: #172B4D;
+}
+
+.profession {
+  color: #36B37F
+}
+
+.supporting-text {
+  color: #172B4D;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.social {
+  display: flex;
+  flex-basis: 170px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.twitter-logo {
+  width: 19.99px;
+  height: 19.96px;
+}
+.linkedin-logo {
+  width: 20px;
+  height: 20px;
+}
+.medium-logo {
+  width: 20px;
+  height: 16px;
+}
+.github-logo {
+  width: 18px;
+  height: 20px;
+}
+.angelist-logo {
+  width: 14.17px;
+  height: 20px;
+}
+
+.button {
+  flex-basis: 100%;
+  align-self: flex-end;
+}
