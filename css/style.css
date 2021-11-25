@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hole-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome {
+  color: #28352f;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.welcome h2 {
+  font-size: 20px;
+  padding: 11px 24px;
+}
+
+.headline {
+  flex-basis: 100%;
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../images/background/mobile-portfolio-background-1.png);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.primary-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 40px;
+}
+
+.name {
+  color: #172b4d;
+  font-size: 40px;
+}
+
+.profession {
+  color: #36b37f;
+  font-size: 40px;
+}
+
+.supporting-text {
+  color: #172b4d;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.social {
+  display: flex;
+  flex-basis: 170px;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.twitter-logo {
+  width: 19.99px;
+  height: 19.96px;
+}
+
+.linkedin-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.medium-logo {
+  width: 20px;
+  height: 16px;
+}
+
+.github-logo {
+  width: 18px;
+  height: 20px;
+}
+
+.angelist-logo {
+  width: 14.17px;
+  height: 20px;
+}
+
+.button {
+  flex-basis: 100%;
+  align-self: flex-end;
+}
+
+.twitter-logo:hover {
+  filter: contrast(200%);
+}
+
+.twitter-logo:active {
+  filter: brightness(200%);
+}
+
+.linkedin-logo:hover {
+  filter: contrast(200%);
+}
+
+.linkedin-logo:active {
+  filter: brightness(200%);
+}
+
+.medium-logo:hover {
+  filter: contrast(200%);
+}
+
+.medium-logo:active {
+  filter: brightness(200%);
+}
+
+.github-logo:hover {
+  filter: contrast(200%);
+}
+
+.github-logo:active {
+  filter: brightness(200%);
+}
+
+.angelist-logo:hover {
+  filter: contrast(200%);
+}
+
+.angelist-logo:active {
+  filter: brightness(200%);
+}
+
+.button:hover {
+  filter: contrast(200%);
+}
+
+.button:active {
+  filter: brightness(200%);
+}
