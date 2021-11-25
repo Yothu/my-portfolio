@@ -3,18 +3,13 @@
   padding: 0;
 }
 
-body {
-  /*
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  */
+/* ---------------------------------- */
 
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-image: url(../images/background/mobile-portfolio-background-1.png);
+body {
+  border: 2px solid crimson;
 }
+
+/*
 
 .toolbar {
   background-color: lightgreen;
@@ -29,10 +24,24 @@ body {
   background-color: lightsalmon;
 }
 
+
+
 .body {
   background-color: greenyellow;
   border: 1px solid blue;
 }
+
+*/
+
+/* -------------------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+
+  }
 
 .toolbar {
   display: flex;
@@ -51,16 +60,12 @@ body {
   padding: 11px 24px;
 }
 
-.dropbox {
-  text-align: end;
-  align-self: center;
-}
-
-#drp-img {
-  align-self: center;
-}
-
 .body {
+  flex-basis: 100%;
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../images/background/mobile-portfolio-background-1.png);
   
 }
 
