@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body {
+.hole-page {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -19,6 +19,7 @@ body {
   color: #28352f;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  text-decoration: none;
 }
 
 .welcome h2 {
@@ -50,10 +51,12 @@ body {
 
 .name {
   color: #172b4d;
+  font-size: 40px;
 }
 
 .profession {
   color: #36b37f;
+  font-size: 40px;
 }
 
 .supporting-text {
@@ -73,6 +76,7 @@ body {
   flex-basis: 170px;
   justify-content: space-between;
   align-items: center;
+  list-style-type:none
 }
 
 .twitter-logo {
