@@ -156,3 +156,218 @@
 .button:active {
   filter: brightness(200%);
 }
+
+.work {
+  display: grid;
+  grid-template-columns: auto;
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+.work-title {
+  color: #172b4d;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-columns: calc(100% - 48px);
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+.proj {
+  height: 474px;
+  width: 327px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #ebf0ee;
+}
+
+.proj-details {
+  border-radius: 8px;
+  border: 1px solid #d0d9d4;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 45%;
+  align-items: center;
+}
+
+.proj-languages {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+
+.proj-languages > * {
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+}
+
+.proj-title {
+  margin: 16px 1px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  align-items: center;
+  text-align: center;
+  flex-basis: 80%;
+}
+
+.proj-button {
+  background-color: #36b37f;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.proj-button:hover {
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.proj-button:active {
+  background-color: #008552;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: auto;
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+.about-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 12px;
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../images/background/about-me-background.png);
+}
+
+.about-me-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  text-align: center;
+  flex-basis: calc(100% - 24px);
+}
+
+.about-me-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 24px 1px;
+}
+
+.about-button {
+  margin: 12px 1px;
+  background-color: #36b37f;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  justify-content: center;
+}
+
+.about-button:hover {
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.about-button:active {
+  background-color: #008552;
+}
+
+.ability-box {
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #ebf0ee;
+  margin: 12px 24px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c1c7d0;
+  height: 352px;
+  justify-content: space-evenly;
+}
+
+.abi-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.abi-box {
+  list-style-type: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 8px;
+  justify-content: center;
+}
+
+.abi-data h3 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+}
+
+.abi-box > * {
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+}
