@@ -3,25 +3,6 @@
   padding: 0;
 }
 
-/* ----------------------------------------
-
-.primary-text {
-  background-color: aquamarine;
-}
-
-.supporting-text {
-  background-color: blueviolet;
-}
-
-.social {
-  background-color: cadetblue;
-}
-
-.button {
-  background-color: chocolate;
-}
--------------------------------------------- */
-
 .hole-page {
   display: flex;
   flex-direction: column;
@@ -176,26 +157,6 @@
   filter: brightness(200%);
 }
 
-/* -----------------------------------
-
-.work {
-  background-color: lightgreen;
-}
-
-.work-title {
-  background-color: lightpink;
-}
-
-.proj {
-  background-color: lightskyblue;
-}
-
-.proj-title {
-  background-color: mediumblue;
-}
-
-  ------------------------------------ */
-
 .work {
   display: grid;
   grid-template-columns: auto;
@@ -295,36 +256,12 @@
   background-color: #008552;
 }
 
-/* -----------------------------------------
-
 .about-me {
-  background: lightblue;
+  display: grid;
+  grid-template-columns: auto;
+  align-content: space-evenly;
+  justify-content: center;
 }
-
-.about-description {
-  background-color: lightgreen;
-}
-
-/*
-.about-me-text {
-  background-color: lightyellow;
-}
-.about-me-title {
-  background-color: limegreen;
-}
-.about-button {
-
-}
-
-.abi-data {
-  background-color: chartreuse;
-}
-
-.abi-data h3 {
-  background-color: cornflowerblue;
-}
-
--------------------------------------------- */
 
 .about-description {
   display: flex;
@@ -411,7 +348,7 @@
   flex-wrap: wrap;
   column-gap: 8px;
   row-gap: 8px;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .abi-data h3 {
@@ -434,54 +371,3 @@
   line-height: 16px;
   color: #36b37e;
 }
-
-/* -----------------------------------------
-
-.contact {
-  background: lightgray;
-}
-
-.get-touch {
-  background: lightsalmon;
-}
-
-.data-form {
-  background: lime;
-}
-
----------------------------------- */
-
-/*
-
-.contact {
-  display: grid;
-  grid-template-columns: calc(100% - 48px);
-  justify-content: space-evenly;
-}
-
-.get-touch {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
-  text-align: center;
-}
-
-.contact-form {
-  border: 1px solid #D0D9D4;
-  box-sizing: border-box;
-  border-radius: 4px;
-  height: 48px;
-}
-
-.data-form {
-  text-align: center;
-}
-
-.contact-name {
-
-}
-
-*/
