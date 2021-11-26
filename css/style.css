@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-/* ---------------------------------------- 
+/* ----------------------------------------
 
 .primary-text {
   background-color: aquamarine;
@@ -20,7 +20,7 @@
 .button {
   background-color: chocolate;
 }
- -------------------------------------------- */
+-------------------------------------------- */
 
 .hole-page {
   display: flex;
@@ -176,7 +176,7 @@
   filter: brightness(200%);
 }
 
-/* ----------------------------------- 
+/* -----------------------------------
 
 .work {
   background-color: lightgreen;
@@ -199,7 +199,6 @@
 .work {
   display: grid;
   grid-template-columns: auto;
-  
   align-content: space-evenly;
   justify-content: center;
 }
@@ -225,8 +224,6 @@
 .proj {
   height: 474px;
   width: 327px;
-  left: 0px;
-  top: 0px;
   border-radius: 8px;
   display: flex;
   align-items: flex-end;
@@ -236,11 +233,11 @@
 .proj-details {
   border-radius: 8px;
   border: 1px solid #d0d9d4;
-  background: #ffffff;
+  background: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 45%;  /* CHANGE */
+  height: 45%;  
   align-items: center;
 }
 
@@ -291,15 +288,15 @@
 }
 
 .proj-button:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .proj-button:active {
   background-color: #008552;
 }
 
-/* ----------------------------------------- 
-*/
+/* -----------------------------------------
+
 .about-me {
   background: lightblue;
 }
@@ -333,11 +330,6 @@
 
 -------------------------------------------- */
 
-.about-me {
-  display: grid;
-  grid: 100%;
-}
-
 .about-description {
   display: flex;
   flex-wrap: wrap;
@@ -349,7 +341,7 @@
   background-image: url(../images/background/about-me-background.png);
 }
 
-.about-me-text{
+.about-me-text {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -357,7 +349,7 @@
   line-height: 32px;
   color: #42526e;
   text-align: center;
-  flex-basis: calc(100% - 24px) ;
+  flex-basis: calc(100% - 24px);
 }
 
 .about-me-title {
@@ -367,13 +359,13 @@
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  margin: 24px 0px;
+  margin: 24px 1px;
 }
 
 .about-button {
-  margin: 12px 0px;
+  margin: 12px 1px;
   background-color: #36b37f;
-  color: #ffffff;
+  color: #fff;
   border-radius: 4px;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -386,7 +378,7 @@
 }
 
 .about-button:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .about-button:active {
@@ -438,7 +430,7 @@
 .abi-box > * {
   border-radius: 8px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -447,7 +439,7 @@
   color: #36b37e;
 }
 
-/* ----------------------------------------- 
+/* -----------------------------------------
 
 .contact {
   background: lightgray;
@@ -493,7 +485,7 @@
 }
 
 .contact-name {
-  
+
 }
 
 */
