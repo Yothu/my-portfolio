@@ -237,7 +237,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 45%;  
+  height: 45%;
   align-items: center;
 }
 
@@ -249,7 +249,7 @@
 }
 
 .proj-languages > * {
-  background: #EBF0EE;
+  background: #ebf0ee;
   border-radius: 4px;
   padding: 8px 12px;
   font-family: 'Inter', sans-serif;
@@ -261,7 +261,7 @@
 }
 
 .proj-title {
-  margin: 16px 0px;
+  margin: 16px 1px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -274,7 +274,7 @@
 
 .proj-button {
   background-color: #36b37f;
-  color: #ffffff;
+  color: #fff;
   border-radius: 4px;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -301,8 +301,6 @@
   background: lightblue;
 }
 
-
-
 .about-description {
   background-color: lightgreen;
 }
@@ -317,8 +315,6 @@
 .about-button {
 
 }
-
-
 
 .abi-data {
   background-color: chartreuse;
