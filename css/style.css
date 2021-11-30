@@ -390,7 +390,7 @@
 }
 
 .contact-form {
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 4px;
   height: 48px;
@@ -409,4 +409,22 @@
 
 .data-form {
   text-align: center;
+}
+
+.contact .social {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.last-email {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 24px;
+  color: #42526e;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  height: 189px;
 }
