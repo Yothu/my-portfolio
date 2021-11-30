@@ -371,3 +371,30 @@
   line-height: 16px;
   color: #36b37e;
 }
+
+.contact {
+  display: grid;
+  grid-template-columns: calc(100% - 48px);
+  justify-content: space-evenly;
+}
+
+.get-touch {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  text-align: center;
+  margin-bottom: 58px;
+}
+.contact-form {
+  border: 1px solid #D0D9D4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 48px;
+}
+
+.data-form {
+  text-align: center;
+}
