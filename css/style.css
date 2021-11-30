@@ -452,6 +452,7 @@
   line-height: 24px;
   text-align: center;
   justify-content: center;
+  border: none;
 }
 
 #submit:hover {
