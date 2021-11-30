@@ -398,8 +398,6 @@
   height: 48px;
 }
 
-
-
 .data-form input,
 .data-form textarea {
   margin-bottom: 24px;
@@ -409,7 +407,7 @@
 
 #contact-message {
   height: 114px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
