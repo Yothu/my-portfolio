@@ -376,6 +376,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../images/background/background-contact.png);
 }
 
 .get-touch {
@@ -386,9 +390,9 @@
   line-height: 52px;
   color: #172b4d;
   text-align: center;
-  margin-bottom: 58px;
+  margin-bottom: 48px;
   flex-basis: calc(100% - 48px);
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .contact-form {
@@ -423,7 +427,7 @@
 .contact .social {
   margin-left: 80px;
   margin-right: 80px;
-  margin-top: 46px;
+  margin-top: 20px;
 }
 
 .last-email {
@@ -440,7 +444,6 @@
 }
 
 #submit {
-  margin: 12px 1px;
   background-color: #36b37f;
   color: #fff;
   border-radius: 4px;
