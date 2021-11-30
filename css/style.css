@@ -388,11 +388,23 @@
   text-align: center;
   margin-bottom: 58px;
 }
+
 .contact-form {
   border: 1px solid #D0D9D4;
   box-sizing: border-box;
   border-radius: 4px;
   height: 48px;
+}
+
+.data-form input,
+.data-form textarea {
+  margin-bottom: 24px;
+  width: 100%;
+  padding: 12px;
+}
+
+#contact-message {
+  height: 114px;
 }
 
 .data-form {
