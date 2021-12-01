@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <title>My Portfolio - Squeleton</title>
 </head>
+
 <body>
   <section class="hole-page">
     <header class="toolbar">
@@ -21,24 +23,26 @@
       </nav>
     </header>
     <section class="headline">
-        <div class="primary-text">
-          <h1 class="name">
-            Hey there. I’m David
-          </h1>
-          <h2 class="profession">
-            I’m a software developer
-          </h2>
-        </div>
-        <p class="supporting-text">
-          I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-          don’t hestiate to contact me.
-        </p>
+      <div class="primary-text">
+        <h1 class="name">
+          Hey there. I’m David
+        </h1>
+        <h2 class="profession">
+          I’m a software developer
+        </h2>
+      </div>
+      <p class="supporting-text">
+        I can help you build a product , feature or website Look through some of my work and experience! If you like
+        what you see and have a project you need coded,
+        don’t hestiate to contact me.
+      </p>
       <ul class="social">
         <li class="twitter-logo">
           <a href="https://twitter.com/Daivhy"><img src="./images/social/twitter.svg" alt="twitter"></a>
         </li>
         <li class="linkedin-logo">
-          <a href="https://www.linkedin.com/in/david-vergaray-almontes-051a11127/"><img src="./images/social/linkedin.svg" alt="linkedin"></a>
+          <a href="https://www.linkedin.com/in/david-vergaray-almontes-051a11127/"><img
+              src="./images/social/linkedin.svg" alt="linkedin"></a>
         </li>
         <li class="medium-logo">
           <a href="https://medium.com/@dhaivy"><img src="./images/social/medium.svg" alt="medium"></a>
@@ -157,7 +161,8 @@
   <section class="about-me">
     <div class="about-description">
       <h2 class="about-me-title">About me</h2>
-      <p class="about-me-text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+      <p class="about-me-text"> I can help you build a product , feature or website Look through some of my work and
+        experience! If you like what you see and have a project you need coded,
         don’t hestiate to contact me.</p>
       <div class="about-button">Get My Resume</div>
     </div>
@@ -197,10 +202,47 @@
             <li>Codepen</li>
             <li>Gitlab</li>
             <li>Terminal</li>
-          </ul>  
+          </ul>
         </div>
       </li>
     </ul>
+  </section>
+
+  <section class="contact">
+    <p class="get-touch">
+      I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+    </p>
+    <form class="data-form" action="https://formspree.io/f/mjvlbpay" method="post">
+      <label for="contact-name">
+        <input type="text" class="contact-form" id="contact-name" name="contact-name" placeholder="Full name" maxlength="30" required>
+      </label>
+      <label for="contact-email">
+        <input type="email" class="contact-form" id="contact-email" name="contact-email" placeholder="Email address" required>
+      </label>
+      <textarea class="contact-form" id="contact-message" name="contact-message" placeholder="Enter text here" maxlength="500" required></textarea>
+      <button type="submit" id="submit">Get in touch</button>
+    </form>
+
+    <ul class="social">
+      <li class="twitter-logo">
+        <a href="https://twitter.com/Daivhy"><img src="./images/social/twitter.svg" alt="twitter"></a>
+      </li>
+      <li class="linkedin-logo">
+        <a href="https://www.linkedin.com/in/david-vergaray-almontes-051a11127/"><img src="./images/social/linkedin.svg"
+            alt="linkedin"></a>
+      </li>
+      <li class="medium-logo">
+        <a href="https://medium.com/@dhaivy"><img src="./images/social/medium.svg" alt="medium"></a>
+      </li>
+      <li class="github-logo">
+        <a href="https://github.com/Yothu"><img src="./images/social/github.svg" alt="github"></a>
+      </li>
+      <li class="angelist-logo">
+        <a href="https://angel.co/u/david-almontes"><img src="./images/social/angellist.svg" alt="angelist"></a>
+      </li>
+    </ul>
+    <a class="last-email" href="mailto:david.vergaray.a@gmail.com">david.vergaray.a@gmail.com</a>
+    <img id="footer-image" src="./images/footer-image.png" alt="footer-image">
   </section>
 </body>
 </html>
