@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+/* ---------------------------- MAIN PAGE ---------------------------------- */
+
 .hole-page {
   display: flex;
   flex-direction: column;
@@ -17,8 +24,6 @@
 
 .welcome {
   color: #28352f;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   text-decoration: none;
 }
 
@@ -32,7 +37,7 @@
   background-size: 100% 100%;
   background-position: center top;
   background-repeat: no-repeat;
-  background-image: url(../images/background/mobile-portfolio-background-1.png);
+  background-image: url(../images/background/movile-main-page-background-image.svg);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -41,8 +46,6 @@
 }
 
 .primary-text {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -61,8 +64,6 @@
 
 .supporting-text {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
@@ -79,74 +80,9 @@
   list-style-type: none;
 }
 
-.twitter-logo {
-  width: 19.99px;
-  height: 19.96px;
-}
-
-.linkedin-logo {
-  width: 20px;
-  height: 20px;
-}
-
-.medium-logo {
-  width: 20px;
-  height: 16px;
-}
-
-.github-logo {
-  width: 18px;
-  height: 20px;
-}
-
-.angelist-logo {
-  width: 14.17px;
-  height: 20px;
-}
-
 .button {
   flex-basis: 100%;
   align-self: flex-end;
-}
-
-.twitter-logo:hover {
-  filter: contrast(200%);
-}
-
-.twitter-logo:active {
-  filter: brightness(200%);
-}
-
-.linkedin-logo:hover {
-  filter: contrast(200%);
-}
-
-.linkedin-logo:active {
-  filter: brightness(200%);
-}
-
-.medium-logo:hover {
-  filter: contrast(200%);
-}
-
-.medium-logo:active {
-  filter: brightness(200%);
-}
-
-.github-logo:hover {
-  filter: contrast(200%);
-}
-
-.github-logo:active {
-  filter: brightness(200%);
-}
-
-.angelist-logo:hover {
-  filter: contrast(200%);
-}
-
-.angelist-logo:active {
-  filter: brightness(200%);
 }
 
 .button:hover {
@@ -157,6 +93,8 @@
   filter: brightness(200%);
 }
 
+/* ------------------------------------- PROJECTS ---------------------------- */
+
 .work {
   display: grid;
   grid-template-columns: auto;
@@ -166,8 +104,6 @@
 
 .work-title {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 52px;
@@ -175,16 +111,20 @@
 }
 
 .projects {
-  display: grid;
-  grid-row-gap: 10px;
-  grid-template-columns: calc(100% - 48px);
+  /* display: grid; */
+  /* grid-row-gap: 10px; */
+  /* grid-template-columns: calc(100% - 48px); */
+  display: flex;
+  flex-wrap: wrap;
   align-content: space-evenly;
   justify-content: center;
 }
 
 .proj {
   height: 474px;
-  width: 327px;
+  flex-basis: 320px;
+  flex-grow: 100px;
+  margin: 12px;
   border-radius: 8px;
   display: flex;
   align-items: flex-end;
@@ -213,8 +153,6 @@
   background: #ebf0ee;
   border-radius: 4px;
   padding: 8px 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -223,12 +161,10 @@
 
 .proj-title {
   margin: 16px 1px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  align-items: center;
+  color: #3a4a42;
   text-align: center;
   flex-basis: 80%;
 }
@@ -238,8 +174,6 @@
   color: #fff;
   border-radius: 4px;
   padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -256,6 +190,8 @@
   background-color: #008552;
 }
 
+/* ------------------------------------- ABOUT ME -------------------------- */
+
 .about-me {
   display: grid;
   grid-template-columns: auto;
@@ -271,12 +207,10 @@
   background-size: 100% 100%;
   background-position: center top;
   background-repeat: no-repeat;
-  background-image: url(../images/background/about-me-background.png);
+  background-image: url(../images/background/about-me-background-image-3.svg);
 }
 
 .about-me-text {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
@@ -286,8 +220,6 @@
 }
 
 .about-me-title {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -301,8 +233,6 @@
   color: #fff;
   border-radius: 4px;
   padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -317,6 +247,8 @@
 .about-button:active {
   background-color: #008552;
 }
+
+/* --- ABILITY BOX --- */
 
 .ability-box {
   box-sizing: border-box;
@@ -339,8 +271,6 @@
 
 .abi-box {
   list-style-type: none;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -352,8 +282,6 @@
 }
 
 .abi-data h3 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -364,13 +292,13 @@
   border-radius: 8px;
   padding: 12px;
   background: #fff;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   color: #36b37e;
 }
+
+/* --------------------------------- CONTACT ME ------------------------------ */
 
 .contact {
   display: flex;
@@ -383,8 +311,6 @@
 }
 
 .get-touch {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -412,8 +338,6 @@
 #contact-message {
   height: 114px;
   border: 1px solid #60c095;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
@@ -435,8 +359,6 @@
   text-align: center;
   margin-top: 24px;
   color: #42526e;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
@@ -448,8 +370,6 @@
   color: #fff;
   border-radius: 4px;
   padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;

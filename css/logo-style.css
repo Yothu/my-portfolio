@@ -1,0 +1,64 @@
+.twitter-logo {
+  width: 19.99px;
+  height: 19.96px;
+}
+
+.linkedin-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.medium-logo {
+  width: 20px;
+  height: 16px;
+}
+
+.github-logo {
+  width: 18px;
+  height: 20px;
+}
+
+.angelist-logo {
+  width: 14.17px;
+  height: 20px;
+}
+
+.twitter-logo:hover {
+  filter: contrast(200%);
+}
+
+.twitter-logo:active {
+  filter: brightness(200%);
+}
+
+.linkedin-logo:hover {
+  filter: contrast(200%);
+}
+
+.linkedin-logo:active {
+  filter: brightness(200%);
+}
+
+.medium-logo:hover {
+  filter: contrast(200%);
+}
+
+.medium-logo:active {
+  filter: brightness(200%);
+}
+
+.github-logo:hover {
+  filter: contrast(200%);
+}
+
+.github-logo:active {
+  filter: brightness(200%);
+}
+
+.angelist-logo:hover {
+  filter: contrast(200%);
+}
+
+.angelist-logo:active {
+  filter: brightness(200%);
+}

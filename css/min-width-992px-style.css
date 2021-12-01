@@ -1,0 +1,39 @@
+/* ---------------------------- MAIN PAGE ------------------------------------ */
+
+.hole-page {
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../images/background/min-992px-main-page-background-image.svg);
+
+}
+
+.headline {
+  background-image: none;
+}
+
+/* ---------------------------- PROJECTS ------------------------------------- */
+
+.work {
+  grid-column-gap: 10%;
+}
+
+.worl-title {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row: 1;
+}
+
+.projects {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+/* ---------------------------- ABOUT ME ------------------------------------- */
+
+.about-description {
+  background-image: url(../images/background/about-me-background-image-2.svg);
+}
+
+/* ----------------------------- CONTACT ME ----------------------------------- */
+
