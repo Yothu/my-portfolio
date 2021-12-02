@@ -1,5 +1,3 @@
-/* ---------------------------- MAIN PAGE ------------------------------------ */
-
 .headline {
   background-image: none;
   align-content: center;
@@ -53,8 +51,6 @@
   text-decoration: none;
 }
 
-/* ---------------------------- PROJECTS ------------------------------------- */
-
 .work-title {
   margin-bottom: 30px;
 }
@@ -62,8 +58,6 @@
 .work-title img {
   display: none;
 }
-
-/* ---------------------------- ABOUT ME ------------------------------------- */
 
 .about-description {
   background-image: url(../images/background/about-me-background-image-2.svg);
@@ -80,8 +74,6 @@
 .abilities {
   grid-template-columns: 370px 370px;
 }
-
-/* ----------------------------- CONTACT ME ----------------------------------- */
 
 .contact {
   background-image: url(../images/background/desktop-contact-me-background-image.png);

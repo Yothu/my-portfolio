@@ -9,8 +9,6 @@ body {
   text-decoration: none;
 }
 
-/* ---------------------------- MAIN PAGE ---------------------------------- */
-
 .hole-page {
   display: flex;
   flex-direction: column;
@@ -97,8 +95,6 @@ body {
 .button img:active {
   filter: brightness(200%);
 }
-
-/* ------------------------------------- PROJECTS ---------------------------- */
 
 .work {
   display: grid;
@@ -191,8 +187,6 @@ body {
   background-color: #008552;
 }
 
-/* ------------------------------------- ABOUT ME -------------------------- */
-
 .about-me {
   display: grid;
   grid-template-columns: auto;
@@ -263,8 +257,6 @@ body {
   justify-content: center;
 }
 
-/* --- ABILITY BOX --- */
-
 .ability-box {
   box-sizing: border-box;
   border-radius: 8px;
@@ -315,8 +307,6 @@ body {
   line-height: 16px;
   color: #36b37e;
 }
-
-/* --------------------------------- CONTACT ME ------------------------------ */
 
 .contact {
   display: flex;

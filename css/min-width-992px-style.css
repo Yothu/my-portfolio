@@ -1,5 +1,3 @@
-/* ---------------------------- MAIN PAGE ------------------------------------ */
-
 .headline {
   background-image: none;
 }
@@ -14,8 +12,6 @@
 .work-title img {
   display: none;
 }
-
-/* ---------------------------- PROJECTS ------------------------------------- */
 
 .work {
   grid-column-gap: 10%;
@@ -36,8 +32,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* ---------------------------- ABOUT ME ------------------------------------- */
-
 .about-description {
   background-image: url(../images/background/about-me-background-image-2.svg);
 }
@@ -51,8 +45,6 @@
 .abilities {
   justify-content: center;
 }
-
-/* ----------------------------- CONTACT ME ----------------------------------- */
 
 .contact {
   justify-content: center;
