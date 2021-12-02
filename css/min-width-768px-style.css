@@ -1,5 +1,48 @@
 /* ---------------------------- MAIN PAGE ------------------------------------ */
 
+.headline {
+  background-image: none;
+  align-content: center;
+  padding: 1px 20% 250px 20%;
+}
+
+.headline > * {
+  margin: 12px !important;
+}
+
+.toolbar {
+  justify-content: center;
+}
+
+.hole-page {
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../images/background/min-992px-main-page-background-image.svg);
+}
+
+.welcome {
+  display: none;
+}
+
+#drop-image {
+  display: none;
+}
+
+.desktop-toolbar {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+}
+
+.desktop-toolbar > * {
+  padding: 10px 12px;
+  color: #344563;
+  text-decoration: none;
+}
+
+/* ---------------------------- PROJECTS ------------------------------------- */
+
 .work-title {
   margin-bottom: 30px;
 }
@@ -7,8 +50,6 @@
 .work-title img {
   display: none;
 }
-
-/* ---------------------------- PROJECTS ------------------------------------- */
 
 /* ---------------------------- ABOUT ME ------------------------------------- */
 
@@ -38,8 +79,8 @@
 
 .final-social {
   flex-basis: 100%;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
+  margin-left: 1px !important;
+  margin-right: 1px !important;
   margin-top: 100px !important;
   flex-grow: 1;
   justify-content: center;

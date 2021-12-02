@@ -6,6 +6,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  text-decoration: none;
 }
 
 /* ---------------------------- MAIN PAGE ---------------------------------- */
@@ -30,6 +31,10 @@ body {
 .welcome h2 {
   font-size: 20px;
   padding: 11px 24px;
+}
+
+.desktop-toolbar {
+  display: none;
 }
 
 .headline {
@@ -85,11 +90,11 @@ body {
   align-self: flex-end;
 }
 
-.button:hover {
+.button img:hover {
   filter: contrast(200%);
 }
 
-.button:active {
+.button img:active {
   filter: brightness(200%);
 }
 
@@ -213,7 +218,6 @@ body {
   color: #42526e;
   text-align: center;
   flex-basis: calc(100% - 24px);
-  padding: ;
 }
 
 .about-me-title {
@@ -228,16 +232,20 @@ body {
 .about-button {
   margin: 12px 1px;
   background-color: #36b37f;
-  color: #fff;
   border-radius: 4px;
   padding: 12px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
   text-align: center;
   justify-content: center;
   margin-left: 20%;
   margin-right: 20%;
+}
+
+.about-button a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .about-button:hover {
@@ -356,6 +364,7 @@ body {
   text-align: center;
   flex-basis: calc(100% - 48px);
   margin: 2%;
+  max-width: 80%;
 }
 
 .contact .social {
