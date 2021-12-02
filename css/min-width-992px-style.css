@@ -1,0 +1,73 @@
+.headline {
+  background-image: none;
+}
+
+.hole-page {
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../images/background/min-992px-main-page-background-image.svg);
+}
+
+.work-title img {
+  display: none;
+}
+
+.work {
+  grid-column-gap: 10%;
+}
+
+.work-title {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row: 1;
+}
+
+.projects {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.proj-title {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-description {
+  background-image: url(../images/background/about-me-background-image-2.svg);
+}
+
+.about-me-text {
+  max-width: 55%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.abilities {
+  justify-content: center;
+}
+
+.contact {
+  justify-content: center;
+}
+
+.final-social {
+  flex-basis: 10%;
+  flex-grow: 1;
+  justify-content: center;
+  border-top: 1px solid #dfe1e6;
+  padding: 16px;
+}
+
+.final-social > * {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.final-social > a {
+  margin-top: auto;
+  margin-bottom: auto;
+}

@@ -1,0 +1,129 @@
+.headline {
+  background-image: none;
+  align-content: center;
+  padding: 1px 20% 250px 20%;
+}
+
+.headline > * {
+  margin: 12px !important;
+}
+
+.toolbar {
+  justify-content: center;
+}
+
+#port-toolbar:hover {
+  filter: contrast(200%);
+}
+
+#abou-toolbar:hover {
+  filter: contrast(200%);
+}
+
+#cont-toolbar:hover {
+  filter: contrast(200%);
+}
+
+.hole-page {
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../images/background/min-992px-main-page-background-image.svg);
+}
+
+.welcome {
+  display: none;
+}
+
+#drop-image {
+  display: none;
+}
+
+.desktop-toolbar {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+}
+
+.desktop-toolbar > * {
+  padding: 10px 12px;
+  list-style-type: none;
+}
+
+.desktop-toolbar > * > a {
+  text-decoration: none;
+  color: #344563;
+}
+
+.work-title {
+  margin-bottom: 30px;
+}
+
+.work-title img {
+  display: none;
+}
+
+.about-description {
+  background-image: url(../images/background/about-me-background-image-2.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.about-me-text {
+  max-width: 55%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.abilities {
+  grid-template-columns: 370px 370px;
+}
+
+.contact {
+  background-image: url(../images/background/desktop-contact-me-background-image.png);
+  margin-top: 10vw;
+}
+
+.last-email {
+  display: none;
+}
+
+#footer-image {
+  display: none;
+}
+
+.get-touch {
+  flex-basis: 40%;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.data-form {
+  text-align: start;
+  flex-basis: 50%;
+}
+
+.final-social {
+  flex-basis: 100%;
+  margin-left: 1px !important;
+  margin-right: 1px !important;
+  margin-top: 100px !important;
+  flex-grow: 1;
+  justify-content: center;
+  border-top: 1px solid #dfe1e6;
+  padding: 16px;
+}
+
+.final-social > * {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.final-social > a {
+  margin-top: auto;
+  margin-bottom: auto;
+}

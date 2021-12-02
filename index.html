@@ -8,8 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./css/style.css">
-  <title>My Portfolio - Squeleton</title>
+  <link rel="stylesheet" href="./css/logo-style.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 399px)" href="./css/min-width-399px-style.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="./css/min-width-768px-style.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px)" href="./css/min-width-992px-style.css">
+  <title>My Portfolio</title>
 </head>
 
 <body>
@@ -19,7 +24,12 @@
         <h2>Welcome</h2>
       </a>
       <nav class="dropbox">
-        <a href="#"><img id="drp-img" src="./images/dropbox.png" alt="dropbox"></a>
+        <a href="#"><img id="drop-image" src="./images/dropbox.png" alt="dropbox"></a>
+        <ul class="desktop-toolbar">
+          <li><a href="#"><h2 id="port-toolbar">Portfolio</h2></a></li>
+          <li><a href="#"><h2 id="abou-toolbar">About</h2></a></li>
+          <li><a href="#"><h2 id="cont-toolbar">Contact</h2></a></li>
+        </ul>  
       </nav>
     </header>
     <section class="headline">
@@ -143,19 +153,6 @@
           <a class="proj-button" href="#">See Project</a>
         </div>
       </div>
-      <div class="proj">
-        <div class="image-space"></div>
-        <div class="proj-details">
-          <h3 class="proj-title">Multi-Post Stories Gain+Glory</h3>
-          <ul class="proj-languages">
-            <li>Ruby on rails</li>
-            <li>css</li>
-            <li>JavaScript</li>
-            <li>html</li>
-          </ul>
-          <a class="proj-button" href="#">See Project</a>
-        </div>
-      </div>
     </nav>
   </section>
   <section class="about-me">
@@ -164,10 +161,10 @@
       <p class="about-me-text"> I can help you build a product , feature or website Look through some of my work and
         experience! If you like what you see and have a project you need coded,
         don’t hestiate to contact me.</p>
-      <div class="about-button">Get My Resume</div>
+      <div class="about-button"><a href="#">Get My Resume</a></div>
     </div>
     <ul class="abilities">
-      <li class="ability-box">
+      <li class="ability-box language-box">
         <img src="./images/language.png" alt="languages-icon">
         <div class="abi-data">
           <h3>Languages</h3>
@@ -179,7 +176,7 @@
           </ul>
         </div>
       </li>
-      <li class="ability-box">
+      <li class="ability-box framework-box">
         <img src="./images/framework.png" alt="frameworks-icon">
         <div class="abi-data">
           <h3>Frameworks</h3>
@@ -192,7 +189,7 @@
           </ul>
         </div>
       </li>
-      <li class="ability-box">
+      <li class="ability-box skill-box">
         <img src="./images/skill.png" alt="skills-icon">
         <div class="abi-data">
           <h3>Skills</h3>
@@ -219,11 +216,10 @@
       <label for="contact-email">
         <input type="email" class="contact-form" id="contact-email" name="contact-email" placeholder="Email address" required>
       </label>
-      <textarea class="contact-form" id="contact-message" name="contact-message" placeholder="Enter text here" maxlength="500" required></textarea>
+      <textarea class="contact-form" id="contact-message" name="contact-message" placeholder="Type something" maxlength="500" required></textarea>
       <button type="submit" id="submit">Get in touch</button>
     </form>
-
-    <ul class="social">
+    <ul class="social final-social">
       <li class="twitter-logo">
         <a href="https://twitter.com/Daivhy"><img src="./images/social/twitter.svg" alt="twitter"></a>
       </li>
