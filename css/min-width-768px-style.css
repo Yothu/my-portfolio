@@ -14,6 +14,18 @@
   justify-content: center;
 }
 
+#port-toolbar:hover {
+  filter: contrast(200%);
+}
+
+#abou-toolbar:hover {
+  filter: contrast(200%);
+}
+
+#cont-toolbar:hover {
+  filter: contrast(200%);
+}
+
 .hole-page {
   background-size: 100% 100%;
   background-position: center top;
