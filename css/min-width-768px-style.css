@@ -47,8 +47,12 @@
 
 .desktop-toolbar > * {
   padding: 10px 12px;
-  color: #344563;
+  list-style-type: none;
+}
+
+.desktop-toolbar > * > a {
   text-decoration: none;
+  color: #344563;
 }
 
 .work-title {
