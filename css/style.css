@@ -244,7 +244,20 @@ body {
 }
 
 .about-button:hover {
-  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+  animation-name: shadow-pulsing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes shadow-pulsing {
+  from {
+    box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  to {
+    box-shadow: 1px 20px 32px rgb(34, 90, 42, 0.5);
+  }
 }
 
 .about-button:active {
