@@ -83,6 +83,14 @@ body {
   list-style-type: none;
 }
 
+.social li {
+  transition: transform 1s;
+}
+
+.social li:hover {
+  transform: rotate(-720deg);
+}
+
 .button {
   flex-basis: 100%;
   align-self: flex-end;
