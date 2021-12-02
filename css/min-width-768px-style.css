@@ -67,6 +67,8 @@
 
 .about-description {
   background-image: url(../images/background/about-me-background-image-2.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .about-me-text {
