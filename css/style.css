@@ -42,7 +42,7 @@ body {
   background-size: 100% 100%;
   background-position: center top;
   background-repeat: no-repeat;
-  background-image: url(../images/background/movile-main-page-background-image.svg);
+  background-image: url(../images/background/main-page-background-image.svg);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -198,6 +198,7 @@ body {
   grid-template-columns: auto;
   align-content: space-evenly;
   justify-content: center;
+  margin-top: 10vw;
 }
 
 .about-description {

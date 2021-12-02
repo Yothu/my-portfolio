@@ -65,6 +65,10 @@
 
 /* ---------------------------- ABOUT ME ------------------------------------- */
 
+.about-description {
+  background-image: url(../images/background/about-me-background-image-2.svg);
+}
+
 .about-me-text {
   max-width: 55%;
   margin-top: 20px;
@@ -79,6 +83,7 @@
 
 .contact {
   background-image: url(../images/background/desktop-contact-me-background-image.png);
+  margin-top: 10vw;
 }
 
 .last-email {
