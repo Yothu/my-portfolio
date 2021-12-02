@@ -181,6 +181,20 @@ body {
 
 .proj-button:hover {
   box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+  animation-name: text-pulsing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes text-pulsing {
+  from {
+    font-size: 17px;
+  }
+
+  to {
+    font-size: 20px;
+  }
 }
 
 .proj-button:active {
