@@ -50,17 +50,6 @@
   justify-content: center;
 }
 
-.get-touch {
-  flex-basis: 40%;
-  font-size: 30px;
-  margin-right: 10px;
-}
-
-.data-form {
-  text-align: start;
-  flex-basis: 50%;
-}
-
 .final-social {
   flex-basis: 10%;
   flex-grow: 1;
