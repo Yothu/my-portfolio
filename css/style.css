@@ -334,6 +334,7 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   height: 48px;
+  color: #6b778c;
 }
 
 .data-form input,
@@ -349,6 +350,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
+  color: #091e42;
 }
 
 .data-form {
