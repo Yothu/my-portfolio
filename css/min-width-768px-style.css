@@ -1,0 +1,62 @@
+/* ---------------------------- MAIN PAGE ------------------------------------ */
+
+.work-title {
+  margin-bottom: 30px;
+}
+
+.work-title img {
+  display: none;
+}
+
+/* ---------------------------- PROJECTS ------------------------------------- */
+
+/* ---------------------------- ABOUT ME ------------------------------------- */
+
+.about-me-text {
+  max-width: 55%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.abilities {
+  grid-template-columns: 370px 370px;
+}
+
+/* ----------------------------- CONTACT ME ----------------------------------- */
+
+.contact {
+  background-image: url(../images/background/desktop-contact-me-background-image.png);
+}
+
+.last-email {
+  display: none;
+}
+
+#footer-image {
+  display: none;
+}
+
+.final-social {
+  flex-basis: 100%;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 100px !important;
+  flex-grow: 1;
+  justify-content: center;
+  border-top: 1px solid #dfe1e6;
+  padding: 16px;
+}
+
+.final-social > * {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.final-social > a {
+  margin-top: auto;
+  margin-bottom: auto;
+}

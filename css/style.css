@@ -111,9 +111,6 @@ body {
 }
 
 .projects {
-  /* display: grid; */
-  /* grid-row-gap: 10px; */
-  /* grid-template-columns: calc(100% - 48px); */
   display: flex;
   flex-wrap: wrap;
   align-content: space-evenly;
@@ -216,6 +213,7 @@ body {
   color: #42526e;
   text-align: center;
   flex-basis: calc(100% - 24px);
+  padding: ;
 }
 
 .about-me-title {
@@ -327,8 +325,8 @@ body {
   line-height: 52px;
   color: #172b4d;
   text-align: center;
-  margin-bottom: 48px;
   flex-basis: calc(100% - 48px);
+  margin-bottom: 48px;
   margin-top: 40px;
 }
 
@@ -357,6 +355,7 @@ body {
 .data-form {
   text-align: center;
   flex-basis: calc(100% - 48px);
+  margin: 2%;
 }
 
 .contact .social {
@@ -374,6 +373,7 @@ body {
   font-size: 20px;
   line-height: 32px;
   height: 189px;
+  flex-basis: 80%;
 }
 
 #submit {
@@ -395,10 +395,4 @@ body {
 
 #submit:active {
   background-color: #008552;
-}
-
-@media screen and (min-width: 1090px){
-  .abilities {
-    grid-template-columns: 1fr 360px 360px 360px 1fr;
-  }
 }
