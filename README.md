@@ -14,7 +14,9 @@
 
 ## Live Demo
 
-[Live Demo Link](https://yothu.github.io/my-portfolio/)
+[Live Demo Link]()
+
+https://yothu.github.io/my-portfolio/
 
 ## Author
 
