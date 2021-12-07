@@ -36,6 +36,15 @@
   background-image: url(../images/background/about-me-background-image-2.svg);
 }
 
+.proj-languages {
+  justify-content: center;  
+}
+
+.proj-languages > * {
+  font-size: 14px;
+  margin: 3px;
+}
+
 .about-me-text {
   max-width: 55%;
   margin-top: 30px;
