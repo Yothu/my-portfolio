@@ -6,7 +6,7 @@ button.onclick = function () {
   popUp.classList.toggle('pop-menu-toggle');
 };
 
-function eachClick () {
+function eachClick() {
   popUp.classList.toggle('pop-menu-toggle');
 }
 
