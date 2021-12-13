@@ -6,8 +6,10 @@ button.onclick = function () {
   popUp.classList.toggle('pop-menu-toggle');
 };
 
+function eachClick () {
+  popUp.classList.toggle('pop-menu-toggle');
+}
+
 innerButtons.forEach((item) => {
-  item.addEventListener('click', (event) => {
-    popUp.classList.toggle('pop-menu-toggle');
-  });
+  item.addEventListener('click', eachClick);
 });
