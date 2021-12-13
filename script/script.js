@@ -4,10 +4,10 @@ const innerButtons = document.querySelectorAll('.close');
 
 button.onclick = function () {
   popUp.classList.toggle('pop-menu-toggle');
-}
+};
 
-innerButtons.forEach(item => {
-  item.addEventListener('click', event => {
+innerButtons.forEach((item) => {
+  item.addEventListener('click', (event) => {
     popUp.classList.toggle('pop-menu-toggle');
   });
 });
