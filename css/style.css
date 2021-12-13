@@ -401,22 +401,40 @@ body {
     flex-direction: column;
     position: fixed;
     z-index: 1;
-    padding-top: 30px;
-    padding-left: 8vw;
-    padding-right: 8vw;
     left: 0;
     top: 0;
-    width: 84vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     overflow: auto;
+    background-color: #e9eaf1;
+  }
+
+  .cross-container {
+    align-self: end;
+    padding: 30px;
+    background-color: white;
+    padding-left: 1000px;
+  }
+
+  #close-header-menu {
+    padding-top: 30px;
+  }
+
+  .desktop-toolbar {
+    padding-left: 8vw;
+    padding-right: 8vw;
     background-color: white;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    padding-bottom: 45vh;
   }
 
-  .pop-menu > a {
-    align-self: flex-end;
-    padding: 20px;
+  #footer-menu-image {
+    position: fixed;
+    bottom: 0;
+    width: 60vh;
+    justify-self: flex-start;
+    align-self: center;
   }
 
   .desktop-toolbar > li {
@@ -429,7 +447,7 @@ body {
     color: #3a4a42;
     text-decoration: none;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 44px;
   }
 }

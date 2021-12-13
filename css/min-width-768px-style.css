@@ -47,6 +47,10 @@
   display: none;
 }
 
+#footer-menu-image {
+  display: none;
+}
+
 .desktop-toolbar {
   display: flex;
   padding: 16px;
