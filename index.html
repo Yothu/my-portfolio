@@ -34,12 +34,15 @@
         <h2>Welcome</h2>
       </a>
       <nav class="dropbox">
-        <a href="#"><img id="drop-image" src="./images/dropbox.png" alt="dropbox-icon"></a>
-        <ul class="desktop-toolbar">
-          <li><a href="#"><h2 id="port-toolbar">Portfolio</h2></a></li>
-          <li><a href="#"><h2 id="abou-toolbar">About</h2></a></li>
-          <li><a href="#"><h2 id="cont-toolbar">Contact</h2></a></li>
-        </ul>  
+        <a href="#"><img id="drop-image" src="./images/dropbox.png" alt="dropbox-icon"></a> <!-- Button -->
+        <div class="pop-menu"> <!-- pop -->
+          <a id="close-header-menu" href="#"><img src="./images/cancel-icon.svg" class="close"></a>
+          <ul class="desktop-toolbar">
+            <li><a href="#portfolio-section"><h2 id="port-toolbar" class="close">Portfolio</h2></a></li>
+            <li><a href="#about-section"><h2 id="abou-toolbar" class="close">About</h2></a></li>
+            <li><a href="#contact-section"><h2 id="cont-toolbar" class="close">Contact</h2></a></li>
+          </ul>    
+        </div>
       </nav>
     </header>
     <section class="headline">
@@ -80,7 +83,7 @@
     </section>
   </section>
 
-  <section class="work">
+  <section id="portfolio-section" class="work">
     <nav class="work-title">
       <h2>My Recent Works</h2>
       <img src="./images/Indicator.png" alt="separator-image">
@@ -167,7 +170,7 @@
     </nav>
   </section>
 
-  <section class="about-me">
+  <section id="about-section" class="about-me">
     <div class="about-description">
       <h2 class="about-me-title">About me</h2>
       <p class="about-me-text"> I can help you build a product , feature or website Look through some of my work and
@@ -217,7 +220,7 @@
     </ul>
   </section>
 
-  <section class="contact">
+  <section id="contact-section" class="contact">
     <p class="get-touch">
       I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
     </p>
@@ -252,5 +255,6 @@
     <a class="last-email" href="mailto:david.vergaray.a@gmail.com">david.vergaray.a@gmail.com</a>
     <img id="footer-image" src="./images/footer-image.png" alt="footer-separator-image">
   </section>
+  <script src="./script/script.js"></script>
 </body>
 </html>

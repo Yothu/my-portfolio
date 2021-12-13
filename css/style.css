@@ -31,10 +31,6 @@ body {
   padding: 11px 24px;
 }
 
-.desktop-toolbar {
-  display: none;
-}
-
 .headline {
   flex-basis: 100%;
   background-size: 100% 100%;
@@ -312,10 +308,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-size: 100% 100%;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-image: url(../images/background/Group\ 41.svg);
 }
 
 .get-touch {
@@ -397,4 +389,28 @@ body {
 
 #submit:active {
   background-color: #008552;
+}
+
+@media screen and (max-width: 767px) {
+  .pop-menu {
+    display: none;
+  }
+
+  .pop-menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    padding-top: 30px;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    left: 0;
+    top: 0;
+    width: 84vw;
+    height: 90vh;
+    overflow: auto;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
 }

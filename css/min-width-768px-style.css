@@ -39,6 +39,14 @@
   display: none;
 }
 
+.pop-menu {
+  display: flex;
+}
+
+#close-header-menu {
+  display: none;
+}
+
 .desktop-toolbar {
   display: flex;
   padding: 16px;
