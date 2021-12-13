@@ -142,7 +142,7 @@ body {
   column-gap: 5px;
 }
 
-.proj-languages>* {
+.proj-languages > * {
   background: #ebf0ee;
   border-radius: 4px;
   padding: 8px 12px;
@@ -294,7 +294,7 @@ body {
   color: #344563;
 }
 
-.abi-box>* {
+.abi-box > * {
   border-radius: 8px;
   padding: 12px;
   background: #fff;
@@ -414,18 +414,18 @@ body {
     border-bottom-right-radius: 50px;
   }
 
-  .pop-menu>a {
+  .pop-menu > a {
     align-self: flex-end;
     padding: 20px;
   }
 
-  .desktop-toolbar>li {
+  .desktop-toolbar > li {
     list-style-type: none;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
-  .desktop-toolbar>li>a {
+  .desktop-toolbar > li > a {
     color: #3a4a42;
     text-decoration: none;
     font-weight: 600;
