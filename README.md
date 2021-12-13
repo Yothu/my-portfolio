@@ -22,7 +22,15 @@
 
 - GitHub:   [@Yothu](https://github.com/Yothu)
 - Twiter:   [@Daivhy](https://twitter.com/Daivhy)
-- LinkedIn: [David V.](https://www.linkedin.com/in/david-vergaray-almontes-051a11127/)
+- LinkedIn: [David Vergaray](https://www.linkedin.com/in/david-vergaray-almontes-051a11127/)
+
+
+##Collaborator
+
+👤 Mauro Vasconcelos]
+
+- GitHub: [@vanillainanutshell](https://github.com/vanillainanutshell)
+- LinkedIn: [Mauro Vasconcelos](https://www.linkedin.com/in/mauro-vasconcelos-a3671a223/)
 
 ## 🤝 Contributing
 
