@@ -25,9 +25,9 @@
 - LinkedIn: [David Vergaray](https://www.linkedin.com/in/david-vergaray-almontes-051a11127/)
 
 
-##Collaborator
+## Collaborator
 
-👤 Mauro Vasconcelos]
+👤 Mauro Vasconcelos
 
 - GitHub: [@vanillainanutshell](https://github.com/vanillainanutshell)
 - LinkedIn: [Mauro Vasconcelos](https://www.linkedin.com/in/mauro-vasconcelos-a3671a223/)
