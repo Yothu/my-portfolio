@@ -199,7 +199,7 @@ body {
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   overflow: auto;
   background-color: #c1c7d0;
 }
@@ -209,10 +209,33 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
-  height: 96%;
+  min-height: 87vh;
   margin: 2%;
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.5rem;
+}
+
+.pop-project-cross {
+  align-self: flex-end;
+  background-color: #ebecf0;
+  padding: 2px;
+  border-radius: 8px;
+  height: 24px;
+  width: 24px;
+  margin-bottom: 3px;
+}
+
+.upper-button-container {
+  display: none !important;
+}
+
+.bottom-button-container {
+  align-self: flex-start;
+}
+
+.bottom-button-container > * {
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .project-popup-title {
@@ -231,6 +254,10 @@ body {
 .popup-button-container {
   display: flex;
   justify-content: space-around;
+}
+
+.proj-button > img {
+  padding-left: 3px;
 }
 
 /* ABOUT-ME-SECTION */
@@ -505,5 +532,22 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 44px;
+  }
+}
+
+@media screen and (min-width: 520px){
+  .popup-project-image {
+    height: 40vw;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .pop-project-cross {
+    background-color: transparent;
+    position: absolute;
+    padding: auto;
+    top: calc(2% + 1.5rem);
+    right: calc(3% + 1.5rem);
   }
 }

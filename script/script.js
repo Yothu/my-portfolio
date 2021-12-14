@@ -19,8 +19,8 @@ let projectInfo = {
 	description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
 	technologies: ['Ruby on rails', 'css', 'JavaScript'],
 	image: '../images/project-image.svg',
-	live: '#',
-	source: '#'
+	live: 'https://yothu.github.io/my-portfolio/',
+	source: 'https://github.com/Yothu/my-portfolio'
 }
 
 let projectInfoArray = [
@@ -35,7 +35,7 @@ let projectInfoArray = [
 const projectContainer = document.querySelector('.projects');
 const projects = projectContainer.children;
 
-for (let i = 0; i < projects.length; i++) {
+for (let i = 1; i < projects.length; i++) { /* CHANGE 1 TO 0 */
 	let projectId = projects[i].getAttribute('id');
 	let projectIdNumber = projectId.charAt(projectId.length-1);
 
@@ -52,21 +52,72 @@ for (let i = 0; i < projects.length; i++) {
 	projPopup.appendChild(projPopCon);
 
 	// CREATE POPUP CONTENTS
+
+	// --- Cross Icon
+	const popupCrossImage = document.createElement('img');
+	popupCrossImage.setAttribute('id', 'project-cross-' + projectIdNumber.toString());
+	popupCrossImage.setAttribute('src', './images/cancel-icon.svg');
+	popupCrossImage.classList.add('pop-project-cross');
+	popupCrossImage.setAttribute('alt', 'cancel-icon');
+	projPopCon.appendChild(popupCrossImage);
+
 	// --- Image
 	const popupImage = document.createElement('img');
 	popupImage.setAttribute('src', projectInfoArray[2]);
+	popupImage.classList.add('popup-project-image');
+	popupImage.setAttribute('alt', 'project-image');
 	projPopCon.appendChild(popupImage);
 
-	// --- Title
+	// --- Title and Upper Buttons Container
+	const titUppButtonsContainer = document.createElement('div');
+	titUppButtonsContainer.classList.add('popup-title-buttons-container');
+	projPopCon.appendChild(titUppButtonsContainer);
+
+	// --- --- Title
 	const popupTitle = document.createElement('h3');
 	popupTitle.classList.add('project-popup-title');
 	let text = document.createTextNode(projectInfoArray[0]);
 	popupTitle.appendChild(text);
-	projPopCon.appendChild(popupTitle);
+	titUppButtonsContainer.appendChild(popupTitle);
+
+	// --- --- Upper Buttons Container
+	const UppButtonsContainer = document.createElement('div');
+	UppButtonsContainer.classList.add('popup-button-container');
+	UppButtonsContainer.classList.add('upper-button-container');
+	titUppButtonsContainer.appendChild(UppButtonsContainer);
+
+	// --- --- --- Upper Buttons
+	const popupButtonU1 = document.createElement('a');
+	popupButtonU1.classList.add('proj-button');
+	popupButtonU1.setAttribute('href', projectInfoArray[4]);
+	text = document.createTextNode('See Live');
+	popupButtonU1.appendChild(text);
+	UppButtonsContainer.appendChild(popupButtonU1);
+
+	const popupButtonU2 = document.createElement('a');
+	popupButtonU2.classList.add('proj-button');
+	popupButtonU2.setAttribute('href', projectInfoArray[5]);
+	text = document.createTextNode('See Source');
+	popupButtonU2.appendChild(text);
+	UppButtonsContainer.appendChild(popupButtonU2);
+
+	// --- --- --- Button Image 1
+	let popupButtonImage1 = document.createElement('img');
+	popupButtonImage1.setAttribute('src', './images/export-icon.svg');
+	popupButtonImage1.setAttribute('alt', 'export-icon');
+	popupButtonU1.appendChild(popupButtonImage1);
+
+	// --- --- --- Button Image 2
+	let popupButtonImage2 = document.createElement('img');
+	popupButtonImage2.setAttribute('src', './images/github-icon-2.svg');
+	popupButtonImage2.setAttribute('alt', 'github-icon');
+	popupButtonU2.appendChild(popupButtonImage2);
+	
 
 	// --- Technologies Container
 	const popUpList = document.createElement('ul');
 	popUpList.classList.add('proj-languages');
+	popUpList.classList.add('proj-languages-j-start');
 	projPopCon.appendChild(popUpList);
 
 	// --- --- Technologies
@@ -85,9 +136,9 @@ for (let i = 0; i < projects.length; i++) {
 	projPopCon.appendChild(popupDescription);
 
 	// --- Buttons Container
-
 	const popupButtonContainer = document.createElement('div');
 	popupButtonContainer.classList.add('popup-button-container');
+	popupButtonContainer.classList.add('bottom-button-container');
 	projPopCon.appendChild(popupButtonContainer);
 
 	// --- --- Buttons
@@ -106,14 +157,15 @@ for (let i = 0; i < projects.length; i++) {
 	popupButtonContainer.appendChild(popupButton2);
 
 	// --- --- --- Button Image 1
-	const popupButtonImage1 = document.createElement('img');
+	popupButtonImage1 = document.createElement('img');
 	popupButtonImage1.setAttribute('src', './images/export-icon.svg');
+	popupButtonImage1.setAttribute('alt', 'export-icon');
 	popupButton1.appendChild(popupButtonImage1);
 
-
 	// --- --- --- Button Image 2
-	const popupButtonImage2 = document.createElement('img');
+	popupButtonImage2 = document.createElement('img');
 	popupButtonImage2.setAttribute('src', './images/github-icon-2.svg');
+	popupButtonImage2.setAttribute('alt', 'github-icon');
 	popupButton2.appendChild(popupButtonImage2);
 
 	// APPEND IN PROJECT
@@ -138,7 +190,6 @@ const popup5 = document.getElementById('project-5-popup');
 const projectButton6 = document.querySelector('#button-project-6');
 const popup6 = document.getElementById('project-6-popup');
 
-
 projectButton1.onclick = function() {
 	popup1.classList.toggle('project-popup-toggle');
 };
@@ -160,5 +211,37 @@ projectButton5.onclick = function() {
 };
 
 projectButton6.onclick = function() {
+	popup6.classList.toggle('project-popup-toggle');
+};
+
+const projectCrossButton1 = document.querySelector('#project-cross-1');
+const projectCrossButton2 = document.querySelector('#project-cross-2');
+const projectCrossButton3 = document.querySelector('#project-cross-3');
+const projectCrossButton4 = document.querySelector('#project-cross-4');
+const projectCrossButton5 = document.querySelector('#project-cross-5');
+const projectCrossButton6 = document.querySelector('#project-cross-6');
+
+
+projectCrossButton1.onclick = function() {
+	popup1.classList.toggle('project-popup-toggle');
+};
+
+projectCrossButton2.onclick = function() {
+	popup2.classList.toggle('project-popup-toggle');
+};
+
+projectCrossButton3.onclick = function() {
+	popup3.classList.toggle('project-popup-toggle');
+};
+
+projectCrossButton4.onclick = function() {
+	popup4.classList.toggle('project-popup-toggle');
+};
+
+projectCrossButton5.onclick = function() {
+	popup5.classList.toggle('project-popup-toggle');
+};
+
+projectCrossButton6.onclick = function() {
 	popup6.classList.toggle('project-popup-toggle');
 };
