@@ -31,10 +31,6 @@ body {
   padding: 11px 24px;
 }
 
-.desktop-toolbar {
-  display: none;
-}
-
 .headline {
   flex-basis: 100%;
   background-size: 100% 100%;
@@ -312,10 +308,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-size: 100% 100%;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-image: url(../images/background/Group\ 41.svg);
 }
 
 .get-touch {
@@ -397,4 +389,65 @@ body {
 
 #submit:active {
   background-color: #008552;
+}
+
+@media screen and (max-width: 767px) {
+  .pop-menu {
+    display: none;
+  }
+
+  .pop-menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: #e9eaf1;
+  }
+
+  .cross-container {
+    align-self: end;
+    padding: 30px;
+    background-color: white;
+    padding-left: 1000px;
+  }
+
+  #close-header-menu {
+    padding-top: 30px;
+  }
+
+  .desktop-toolbar {
+    padding-left: 8vw;
+    padding-right: 8vw;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-bottom: 45vh;
+  }
+
+  #footer-menu-image {
+    position: fixed;
+    bottom: 0;
+    width: 60vh;
+    justify-self: flex-start;
+    align-self: center;
+  }
+
+  .desktop-toolbar > li {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .desktop-toolbar > li > a {
+    color: #3a4a42;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 44px;
+  }
 }

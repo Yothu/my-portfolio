@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F0X27GB7FW"></script>
   <script>
@@ -11,7 +12,6 @@
   
     gtag('config', 'G-F0X27GB7FW');
   </script>
-  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,11 +35,17 @@
       </a>
       <nav class="dropbox">
         <a href="#"><img id="drop-image" src="./images/dropbox.png" alt="dropbox-icon"></a>
-        <ul class="desktop-toolbar">
-          <li><a href="#"><h2 id="port-toolbar">Portfolio</h2></a></li>
-          <li><a href="#"><h2 id="abou-toolbar">About</h2></a></li>
-          <li><a href="#"><h2 id="cont-toolbar">Contact</h2></a></li>
-        </ul>  
+        <div class="pop-menu">
+          <div class="cross-container">
+            <a id="close-header-menu" href="#"><img src="./images/cancel-icon.svg" class="close" alt="cancel-icon"></a>
+          </div>
+          <ul class="desktop-toolbar">
+            <li><a href="#portfolio-section"><h2 id="port-toolbar" class="close">Portfolio</h2></a></li>
+            <li><a href="#about-section"><h2 id="abou-toolbar" class="close">About</h2></a></li>
+            <li><a href="#contact-section"><h2 id="cont-toolbar" class="close">Contact</h2></a></li>
+          </ul>
+          <img id="footer-menu-image" src="./images/footer-image.png" alt="footer-separator-image">
+        </div>
       </nav>
     </header>
     <section class="headline">
@@ -80,7 +86,7 @@
     </section>
   </section>
 
-  <section class="work">
+  <section id="portfolio-section" class="work">
     <nav class="work-title">
       <h2>My Recent Works</h2>
       <img src="./images/Indicator.png" alt="separator-image">
@@ -167,7 +173,7 @@
     </nav>
   </section>
 
-  <section class="about-me">
+  <section id="about-section" class="about-me">
     <div class="about-description">
       <h2 class="about-me-title">About me</h2>
       <p class="about-me-text"> I can help you build a product , feature or website Look through some of my work and
@@ -217,7 +223,7 @@
     </ul>
   </section>
 
-  <section class="contact">
+  <section id="contact-section" class="contact">
     <p class="get-touch">
       I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
     </p>
@@ -252,5 +258,6 @@
     <a class="last-email" href="mailto:david.vergaray.a@gmail.com">david.vergaray.a@gmail.com</a>
     <img id="footer-image" src="./images/footer-image.png" alt="footer-separator-image">
   </section>
+  <script src="./script/script.js"></script>
 </body>
 </html>

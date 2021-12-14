@@ -39,6 +39,18 @@
   display: none;
 }
 
+.pop-menu {
+  display: flex;
+}
+
+#close-header-menu {
+  display: none;
+}
+
+#footer-menu-image {
+  display: none;
+}
+
 .desktop-toolbar {
   display: flex;
   padding: 16px;
