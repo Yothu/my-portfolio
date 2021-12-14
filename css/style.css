@@ -207,10 +207,30 @@ body {
 .project-popup-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: white;
   height: 96%;
   margin: 2%;
   border-radius: 16px;
+  padding: 2rem;
+}
+
+.project-popup-title {
+  color: #172b4d;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.project-popup-description {
+  color: #344563;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.popup-button-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* ABOUT-ME-SECTION */
