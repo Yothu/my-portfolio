@@ -15,6 +15,13 @@ innerButtons.forEach((item) => {
 });
 
 /* AN ARRAY HOLDING A COLECTION OF OBJECTS */
+let projectInfo1 = {};
+let projectInfo2 = {};
+let projectInfo3 = {};
+let projectInfo4 = {};
+let projectInfo5 = {};
+let projectInfo6 = {};
+
 const projectsArray = [
   projectInfo1 = {
     title: 'Keeping track of hundreds of components',
