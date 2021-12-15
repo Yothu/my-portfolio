@@ -2,7 +2,7 @@ const popUp = document.querySelector('.pop-menu');
 const button = document.getElementById('drop-image');
 const innerButtons = document.querySelectorAll('.close');
 
-button.onclick = function () {
+button.onclick = function openMenu() {
   popUp.classList.toggle('pop-menu-toggle');
 };
 
