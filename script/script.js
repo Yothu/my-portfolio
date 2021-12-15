@@ -14,7 +14,7 @@ innerButtons.forEach((item) => {
   item.addEventListener('click', eachClick);
 });
 
-const projectInfo = {
+const projectInfo1 = {
   title: 'Keeping track of hundreds of components',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   technologies: ['Ruby on rails', 'css', 'JavaScript'],
@@ -23,13 +23,58 @@ const projectInfo = {
   source: 'https://github.com/Yothu/my-portfolio',
 };
 
-const projectInfoArray = [
-  projectInfo.title,
-  projectInfo.description,
-  projectInfo.image,
-  projectInfo.technologies,
-  projectInfo.live,
-  projectInfo.source,
+const projectInfo2 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+const projectInfo3 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+const projectInfo4 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+const projectInfo5 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+const projectInfo6 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+const projectsArray = [
+  projectInfo1,
+  projectInfo2,
+  projectInfo3,
+  projectInfo4,
+  projectInfo5,
+  projectInfo6,
 ];
 
 const projectContainer = document.querySelector('.projects');
@@ -62,7 +107,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
   // --- Image
   const popupImage = document.createElement('img');
-  popupImage.setAttribute('src', projectInfoArray[2]);
+  popupImage.setAttribute('src', projectsArray[i].image);
   popupImage.classList.add('popup-project-image');
   popupImage.setAttribute('alt', 'project-image');
   projPopCon.appendChild(popupImage);
@@ -75,7 +120,7 @@ for (let i = 0; i < projects.length; i += 1) {
   // --- --- Title
   const popupTitle = document.createElement('h3');
   popupTitle.classList.add('project-popup-title');
-  let text = document.createTextNode(projectInfoArray[0]);
+  let text = document.createTextNode(projectsArray[i].title);
   popupTitle.appendChild(text);
   titUppButtonsContainer.appendChild(popupTitle);
 
@@ -88,14 +133,14 @@ for (let i = 0; i < projects.length; i += 1) {
   // --- --- --- Upper Buttons
   const popupButtonU1 = document.createElement('a');
   popupButtonU1.classList.add('proj-button');
-  popupButtonU1.setAttribute('href', projectInfoArray[4]);
+  popupButtonU1.setAttribute('href', projectsArray[i].live);
   text = document.createTextNode('See Live');
   popupButtonU1.appendChild(text);
   UppButtonsContainer.appendChild(popupButtonU1);
 
   const popupButtonU2 = document.createElement('a');
   popupButtonU2.classList.add('proj-button');
-  popupButtonU2.setAttribute('href', projectInfoArray[5]);
+  popupButtonU2.setAttribute('href', projectsArray[i].source);
   text = document.createTextNode('See Source');
   popupButtonU2.appendChild(text);
   UppButtonsContainer.appendChild(popupButtonU2);
@@ -119,9 +164,9 @@ for (let i = 0; i < projects.length; i += 1) {
   projPopCon.appendChild(popUpList);
 
   // --- --- Technologies
-  for (let i = 0; i < projectInfoArray[3].length; i += 1) {
+  for (let i = 0; i < projectsArray[i].technologies.length; i += 1) {
     const popupTechno = document.createElement('li');
-    text = document.createTextNode(projectInfoArray[3][i]);
+    text = document.createTextNode(projectsArray[i].technologies[i]);
     popupTechno.appendChild(text);
     popUpList.appendChild(popupTechno);
   }
@@ -129,7 +174,7 @@ for (let i = 0; i < projects.length; i += 1) {
   // --- Description
   const popupDescription = document.createElement('p');
   popupDescription.classList.add('project-popup-description');
-  text = document.createTextNode(projectInfoArray[1]);
+  text = document.createTextNode(projectsArray[i].description);
   popupDescription.appendChild(text);
   projPopCon.appendChild(popupDescription);
 
@@ -142,14 +187,14 @@ for (let i = 0; i < projects.length; i += 1) {
   // --- --- Buttons
   const popupButton1 = document.createElement('a');
   popupButton1.classList.add('proj-button');
-  popupButton1.setAttribute('href', projectInfoArray[4]);
+  popupButton1.setAttribute('href', projectsArray[i].live);
   text = document.createTextNode('See Live');
   popupButton1.appendChild(text);
   popupButtonContainer.appendChild(popupButton1);
 
   const popupButton2 = document.createElement('a');
   popupButton2.classList.add('proj-button');
-  popupButton2.setAttribute('href', projectInfoArray[5]);
+  popupButton2.setAttribute('href', projectsArray[i].source);
   text = document.createTextNode('See Source');
   popupButton2.appendChild(text);
   popupButtonContainer.appendChild(popupButton2);
