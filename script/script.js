@@ -14,63 +14,70 @@ innerButtons.forEach((item) => {
   item.addEventListener('click', eachClick);
 });
 
-/* AN ARRAY HOLDING A COLECTION OF OBJECTS */
-let projectInfo1 = {};
-let projectInfo2 = {};
-let projectInfo3 = {};
-let projectInfo4 = {};
-let projectInfo5 = {};
-let projectInfo6 = {};
 
+/* OBJETS STORING INFORMATION */
+const projectInfo1 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+const projectInfo2 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+const projectInfo3 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+const projectInfo4 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+const projectInfo5 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+const projectInfo6 = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio',
+};
+
+/* AN ARRAY HOLDING A COLECTION OF OBJECTS */
 const projectsArray = [
-  projectInfo1 = {
-    title: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
-    image: '../images/project-image.svg',
-    live: 'https://yothu.github.io/my-portfolio/',
-    source: 'https://github.com/Yothu/my-portfolio',
-  },
-  projectInfo2 = {
-    title: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
-    image: '../images/project-image.svg',
-    live: 'https://yothu.github.io/my-portfolio/',
-    source: 'https://github.com/Yothu/my-portfolio',
-  },
-  projectInfo3 = {
-    title: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
-    image: '../images/project-image.svg',
-    live: 'https://yothu.github.io/my-portfolio/',
-    source: 'https://github.com/Yothu/my-portfolio',
-  },
-  projectInfo4 = {
-    title: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
-    image: '../images/project-image.svg',
-    live: 'https://yothu.github.io/my-portfolio/',
-    source: 'https://github.com/Yothu/my-portfolio',
-  },
-  projectInfo5 = {
-    title: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
-    image: '../images/project-image.svg',
-    live: 'https://yothu.github.io/my-portfolio/',
-    source: 'https://github.com/Yothu/my-portfolio',
-  },
-  projectInfo6 = {
-    title: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
-    image: '../images/project-image.svg',
-    live: 'https://yothu.github.io/my-portfolio/',
-    source: 'https://github.com/Yothu/my-portfolio',
-  },
+  projectInfo1,
+  projectInfo2,
+  projectInfo3,
+  projectInfo4,
+  projectInfo5,
+  projectInfo6,
 ];
 
 const projectContainer = document.querySelector('.projects');
