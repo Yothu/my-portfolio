@@ -86,6 +86,10 @@ body {
   align-self: flex-end;
 }
 
+.proj-button > img {
+  padding-left: 3px;
+}
+
 .button img:hover {
   filter: contrast(200%);
 }
@@ -177,10 +181,6 @@ body {
   text-align: center;
   justify-content: center;
   text-decoration: none;
-}
-
-.proj-button > img {
-  padding-left: 3px;
 }
 
 .proj-button:hover {

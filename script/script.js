@@ -35,12 +35,13 @@ const projectInfoArray = [
 const projectContainer = document.querySelector('.projects');
 const projects = projectContainer.children;
 
-for (let i = 0; i < projects.length; i = i + 1) {
+for (let i = 0; i < projects.length; i += 1) {
   const projectId = projects[i].getAttribute('id');
   const projectIdNumber = projectId.charAt(projectId.length - 1);
 
   // CREATE POPUP OUTER CONTAINER
-  const popid = 'project-' + projectIdNumber.toString() + '-popup';
+  // const popid = 'project-' + projectIdNumber.toString() + '-popup';
+  const popid = `project-${projectIdNumber.toString()}-popup`;
 
   const projPopup = document.createElement('div');
   projPopup.setAttribute('id', popid);
@@ -52,10 +53,11 @@ for (let i = 0; i < projects.length; i = i + 1) {
   projPopup.appendChild(projPopCon);
 
   // CREATE POPUP CONTENTS
-
+  
   // --- Cross Icon
   const popupCrossImage = document.createElement('img');
-  popupCrossImage.setAttribute('id', 'project-cross-' + projectIdNumber.toString());
+  // popupCrossImage.setAttribute('id', 'project-cross-' + projectIdNumber.toString());
+  popupCrossImage.setAttribute('id', `project-cross-${projectIdNumber.toString()}`);
   popupCrossImage.setAttribute('src', './images/cancel-icon.svg');
   popupCrossImage.classList.add('pop-project-cross');
   popupCrossImage.setAttribute('alt', 'cancel-icon');
@@ -120,7 +122,7 @@ for (let i = 0; i < projects.length; i = i + 1) {
   projPopCon.appendChild(popUpList);
 
   // --- --- Technologies
-  for (let i = 0; i < projectInfoArray[3].length; i = i + 1) {
+  for (let i = 0; i < projectInfoArray[3].length; i += 1) {
     const popupTechno = document.createElement('li');
     text = document.createTextNode(projectInfoArray[3][i]);
     popupTechno.appendChild(text);
