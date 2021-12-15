@@ -14,7 +14,6 @@ innerButtons.forEach((item) => {
   item.addEventListener('click', eachClick);
 });
 
-
 /* OBJETS STORING INFORMATION */
 const projectInfo1 = {
   title: 'Keeping track of hundreds of components',
@@ -236,27 +235,27 @@ const popup5 = document.getElementById('project-5-popup');
 const projectButton6 = document.querySelector('#button-project-6');
 const popup6 = document.getElementById('project-6-popup');
 
-projectButton1.onclick = function () {
+projectButton1.onclick = function openProject1() {
   popup1.classList.toggle('project-popup-toggle');
 };
 
-projectButton2.onclick = function () {
+projectButton2.onclick = function openProject2() {
   popup2.classList.toggle('project-popup-toggle');
 };
 
-projectButton3.onclick = function () {
+projectButton3.onclick = function openProject3() {
   popup3.classList.toggle('project-popup-toggle');
 };
 
-projectButton4.onclick = function () {
+projectButton4.onclick = function openProject4() {
   popup4.classList.toggle('project-popup-toggle');
 };
 
-projectButton5.onclick = function () {
+projectButton5.onclick = function openProject5() {
   popup5.classList.toggle('project-popup-toggle');
 };
 
-projectButton6.onclick = function () {
+projectButton6.onclick = function openProject6() {
   popup6.classList.toggle('project-popup-toggle');
 };
 
@@ -267,26 +266,26 @@ const projectCrossButton4 = document.querySelector('#project-cross-4');
 const projectCrossButton5 = document.querySelector('#project-cross-5');
 const projectCrossButton6 = document.querySelector('#project-cross-6');
 
-projectCrossButton1.onclick = function () {
+projectCrossButton1.onclick = function closeProject1() {
   popup1.classList.toggle('project-popup-toggle');
 };
 
-projectCrossButton2.onclick = function () {
+projectCrossButton2.onclick = function closeProject2() {
   popup2.classList.toggle('project-popup-toggle');
 };
 
-projectCrossButton3.onclick = function () {
+projectCrossButton3.onclick = function closeProject3() {
   popup3.classList.toggle('project-popup-toggle');
 };
 
-projectCrossButton4.onclick = function () {
+projectCrossButton4.onclick = function closeProjec4() {
   popup4.classList.toggle('project-popup-toggle');
 };
 
-projectCrossButton5.onclick = function () {
+projectCrossButton5.onclick = function closeProject5() {
   popup5.classList.toggle('project-popup-toggle');
 };
 
-projectCrossButton6.onclick = function () {
+projectCrossButton6.onclick = function closeProject6() {
   popup6.classList.toggle('project-popup-toggle');
 };
