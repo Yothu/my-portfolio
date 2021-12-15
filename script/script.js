@@ -20,8 +20,8 @@ const projectInfo = {
   technologies: ['Ruby on rails', 'css', 'JavaScript'],
   image: '../images/project-image.svg',
   live: 'https://yothu.github.io/my-portfolio/',
-  source: 'https://github.com/Yothu/my-portfolio'
-}
+  source: 'https://github.com/Yothu/my-portfolio',
+};
 
 const projectInfoArray = [
   projectInfo.title,
@@ -29,18 +29,18 @@ const projectInfoArray = [
   projectInfo.image,
   projectInfo.technologies,
   projectInfo.live,
-  projectInfo.source
+  projectInfo.source,
 ];
 
 const projectContainer = document.querySelector('.projects');
 const projects = projectContainer.children;
 
-for (let i = 0; i < projects.length; i++) {
-  let projectId = projects[i].getAttribute('id');
-  let projectIdNumber = projectId.charAt(projectId.length-1);
+for (let i = 0; i < projects.length; i = i + 1) {
+  const projectId = projects[i].getAttribute('id');
+  const projectIdNumber = projectId.charAt(projectId.length - 1);
 
   // CREATE POPUP OUTER CONTAINER
-  let popid = 'project-' + projectIdNumber.toString() + '-popup';
+  const popid = 'project-' + projectIdNumber.toString() + '-popup';
 
   const projPopup = document.createElement('div');
   projPopup.setAttribute('id', popid);
@@ -112,7 +112,6 @@ for (let i = 0; i < projects.length; i++) {
   popupButtonImage2.setAttribute('src', './images/github-icon-2.svg');
   popupButtonImage2.setAttribute('alt', 'github-icon');
   popupButtonU2.appendChild(popupButtonImage2);
-  
 
   // --- Technologies Container
   const popUpList = document.createElement('ul');
@@ -121,7 +120,7 @@ for (let i = 0; i < projects.length; i++) {
   projPopCon.appendChild(popUpList);
 
   // --- --- Technologies
-  for (let i = 0; i < projectInfoArray[3].length; i++) {
+  for (let i = 0; i < projectInfoArray[3].length; i = i + 1) {
     const popupTechno = document.createElement('li');
     text = document.createTextNode(projectInfoArray[3][i]);
     popupTechno.appendChild(text);
@@ -190,27 +189,27 @@ const popup5 = document.getElementById('project-5-popup');
 const projectButton6 = document.querySelector('#button-project-6');
 const popup6 = document.getElementById('project-6-popup');
 
-projectButton1.onclick = function() {
+projectButton1.onclick = function () {
   popup1.classList.toggle('project-popup-toggle');
 };
 
-projectButton2.onclick = function() {
+projectButton2.onclick = function () {
   popup2.classList.toggle('project-popup-toggle');
 };
 
-projectButton3.onclick = function() {
+projectButton3.onclick = function () {
   popup3.classList.toggle('project-popup-toggle');
 };
 
-projectButton4.onclick = function() {
+projectButton4.onclick = function () {
   popup4.classList.toggle('project-popup-toggle');
 };
 
-projectButton5.onclick = function() {
+projectButton5.onclick = function () {
   popup5.classList.toggle('project-popup-toggle');
 };
 
-projectButton6.onclick = function() {
+projectButton6.onclick = function () {
   popup6.classList.toggle('project-popup-toggle');
 };
 
@@ -221,27 +220,26 @@ const projectCrossButton4 = document.querySelector('#project-cross-4');
 const projectCrossButton5 = document.querySelector('#project-cross-5');
 const projectCrossButton6 = document.querySelector('#project-cross-6');
 
-
-projectCrossButton1.onclick = function() {
+projectCrossButton1.onclick = function () {
   popup1.classList.toggle('project-popup-toggle');
 };
 
-projectCrossButton2.onclick = function() {
+projectCrossButton2.onclick = function () {
   popup2.classList.toggle('project-popup-toggle');
 };
 
-projectCrossButton3.onclick = function() {
+projectCrossButton3.onclick = function () {
   popup3.classList.toggle('project-popup-toggle');
 };
 
-projectCrossButton4.onclick = function() {
+projectCrossButton4.onclick = function () {
   popup4.classList.toggle('project-popup-toggle');
 };
 
-projectCrossButton5.onclick = function() {
+projectCrossButton5.onclick = function () {
   popup5.classList.toggle('project-popup-toggle');
 };
 
-projectCrossButton6.onclick = function() {
+projectCrossButton6.onclick = function () {
   popup6.classList.toggle('project-popup-toggle');
 };
