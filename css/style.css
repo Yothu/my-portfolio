@@ -179,6 +179,10 @@ body {
   text-decoration: none;
 }
 
+.proj-button > img {
+  padding-left: 3px;
+}
+
 .proj-button:hover {
   box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
 }
@@ -254,10 +258,6 @@ body {
 .popup-button-container {
   display: flex;
   justify-content: space-around;
-}
-
-.proj-button > img {
-  padding-left: 3px;
 }
 
 /* ABOUT-ME-SECTION */
@@ -535,18 +535,17 @@ body {
   }
 }
 
-@media screen and (min-width: 520px){
+@media screen and (min-width: 520px) {
   .popup-project-image {
     height: 40vw;
     align-self: center;
   }
 }
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 520px) {
   .pop-project-cross {
     background-color: transparent;
     position: absolute;
-    padding: auto;
     top: calc(2% + 1.5rem);
     right: calc(3% + 1.5rem);
   }

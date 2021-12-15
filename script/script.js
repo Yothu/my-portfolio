@@ -2,174 +2,174 @@ const popUp = document.querySelector('.pop-menu');
 const button = document.getElementById('drop-image');
 const innerButtons = document.querySelectorAll('.close');
 
-button.onclick = function() {
-	popUp.classList.toggle('pop-menu-toggle');
+button.onclick = function () {
+  popUp.classList.toggle('pop-menu-toggle');
 };
 
 function eachClick() {
-	popUp.classList.toggle('pop-menu-toggle');
+  popUp.classList.toggle('pop-menu-toggle');
 }
 
 innerButtons.forEach((item) => {
-	item.addEventListener('click', eachClick);
+  item.addEventListener('click', eachClick);
 });
 
-let projectInfo = {
-	title: 'Keeping track of hundreds of components',
-	description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-	technologies: ['Ruby on rails', 'css', 'JavaScript'],
-	image: '../images/project-image.svg',
-	live: 'https://yothu.github.io/my-portfolio/',
-	source: 'https://github.com/Yothu/my-portfolio'
+const projectInfo = {
+  title: 'Keeping track of hundreds of components',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['Ruby on rails', 'css', 'JavaScript'],
+  image: '../images/project-image.svg',
+  live: 'https://yothu.github.io/my-portfolio/',
+  source: 'https://github.com/Yothu/my-portfolio'
 }
 
-let projectInfoArray = [
-	projectInfo.title,
-	projectInfo.description,
-	projectInfo.image,
-	projectInfo.technologies,
-	projectInfo.live,
-	projectInfo.source
+const projectInfoArray = [
+  projectInfo.title,
+  projectInfo.description,
+  projectInfo.image,
+  projectInfo.technologies,
+  projectInfo.live,
+  projectInfo.source
 ];
 
 const projectContainer = document.querySelector('.projects');
 const projects = projectContainer.children;
 
-for (let i = 1; i < projects.length; i++) { /* CHANGE 1 TO 0 */
-	let projectId = projects[i].getAttribute('id');
-	let projectIdNumber = projectId.charAt(projectId.length-1);
+for (let i = 0; i < projects.length; i++) {
+  let projectId = projects[i].getAttribute('id');
+  let projectIdNumber = projectId.charAt(projectId.length-1);
 
-	// CREATE POPUP OUTER CONTAINER
-	let popid = 'project-' + projectIdNumber.toString() + '-popup';
+  // CREATE POPUP OUTER CONTAINER
+  let popid = 'project-' + projectIdNumber.toString() + '-popup';
 
-	const projPopup = document.createElement('div');
-	projPopup.setAttribute('id', popid);
-	projPopup.classList.add('project-popup');
+  const projPopup = document.createElement('div');
+  projPopup.setAttribute('id', popid);
+  projPopup.classList.add('project-popup');
 
-	// CREATE POPUP INNNER CONTAINER
-	const projPopCon = document.createElement('div');
-	projPopCon.classList.add('project-popup-container');
-	projPopup.appendChild(projPopCon);
+  // CREATE POPUP INNNER CONTAINER
+  const projPopCon = document.createElement('div');
+  projPopCon.classList.add('project-popup-container');
+  projPopup.appendChild(projPopCon);
 
-	// CREATE POPUP CONTENTS
+  // CREATE POPUP CONTENTS
 
-	// --- Cross Icon
-	const popupCrossImage = document.createElement('img');
-	popupCrossImage.setAttribute('id', 'project-cross-' + projectIdNumber.toString());
-	popupCrossImage.setAttribute('src', './images/cancel-icon.svg');
-	popupCrossImage.classList.add('pop-project-cross');
-	popupCrossImage.setAttribute('alt', 'cancel-icon');
-	projPopCon.appendChild(popupCrossImage);
+  // --- Cross Icon
+  const popupCrossImage = document.createElement('img');
+  popupCrossImage.setAttribute('id', 'project-cross-' + projectIdNumber.toString());
+  popupCrossImage.setAttribute('src', './images/cancel-icon.svg');
+  popupCrossImage.classList.add('pop-project-cross');
+  popupCrossImage.setAttribute('alt', 'cancel-icon');
+  projPopCon.appendChild(popupCrossImage);
 
-	// --- Image
-	const popupImage = document.createElement('img');
-	popupImage.setAttribute('src', projectInfoArray[2]);
-	popupImage.classList.add('popup-project-image');
-	popupImage.setAttribute('alt', 'project-image');
-	projPopCon.appendChild(popupImage);
+  // --- Image
+  const popupImage = document.createElement('img');
+  popupImage.setAttribute('src', projectInfoArray[2]);
+  popupImage.classList.add('popup-project-image');
+  popupImage.setAttribute('alt', 'project-image');
+  projPopCon.appendChild(popupImage);
 
-	// --- Title and Upper Buttons Container
-	const titUppButtonsContainer = document.createElement('div');
-	titUppButtonsContainer.classList.add('popup-title-buttons-container');
-	projPopCon.appendChild(titUppButtonsContainer);
+  // --- Title and Upper Buttons Container
+  const titUppButtonsContainer = document.createElement('div');
+  titUppButtonsContainer.classList.add('popup-title-buttons-container');
+  projPopCon.appendChild(titUppButtonsContainer);
 
-	// --- --- Title
-	const popupTitle = document.createElement('h3');
-	popupTitle.classList.add('project-popup-title');
-	let text = document.createTextNode(projectInfoArray[0]);
-	popupTitle.appendChild(text);
-	titUppButtonsContainer.appendChild(popupTitle);
+  // --- --- Title
+  const popupTitle = document.createElement('h3');
+  popupTitle.classList.add('project-popup-title');
+  let text = document.createTextNode(projectInfoArray[0]);
+  popupTitle.appendChild(text);
+  titUppButtonsContainer.appendChild(popupTitle);
 
-	// --- --- Upper Buttons Container
-	const UppButtonsContainer = document.createElement('div');
-	UppButtonsContainer.classList.add('popup-button-container');
-	UppButtonsContainer.classList.add('upper-button-container');
-	titUppButtonsContainer.appendChild(UppButtonsContainer);
+  // --- --- Upper Buttons Container
+  const UppButtonsContainer = document.createElement('div');
+  UppButtonsContainer.classList.add('popup-button-container');
+  UppButtonsContainer.classList.add('upper-button-container');
+  titUppButtonsContainer.appendChild(UppButtonsContainer);
 
-	// --- --- --- Upper Buttons
-	const popupButtonU1 = document.createElement('a');
-	popupButtonU1.classList.add('proj-button');
-	popupButtonU1.setAttribute('href', projectInfoArray[4]);
-	text = document.createTextNode('See Live');
-	popupButtonU1.appendChild(text);
-	UppButtonsContainer.appendChild(popupButtonU1);
+  // --- --- --- Upper Buttons
+  const popupButtonU1 = document.createElement('a');
+  popupButtonU1.classList.add('proj-button');
+  popupButtonU1.setAttribute('href', projectInfoArray[4]);
+  text = document.createTextNode('See Live');
+  popupButtonU1.appendChild(text);
+  UppButtonsContainer.appendChild(popupButtonU1);
 
-	const popupButtonU2 = document.createElement('a');
-	popupButtonU2.classList.add('proj-button');
-	popupButtonU2.setAttribute('href', projectInfoArray[5]);
-	text = document.createTextNode('See Source');
-	popupButtonU2.appendChild(text);
-	UppButtonsContainer.appendChild(popupButtonU2);
+  const popupButtonU2 = document.createElement('a');
+  popupButtonU2.classList.add('proj-button');
+  popupButtonU2.setAttribute('href', projectInfoArray[5]);
+  text = document.createTextNode('See Source');
+  popupButtonU2.appendChild(text);
+  UppButtonsContainer.appendChild(popupButtonU2);
 
-	// --- --- --- Button Image 1
-	let popupButtonImage1 = document.createElement('img');
-	popupButtonImage1.setAttribute('src', './images/export-icon.svg');
-	popupButtonImage1.setAttribute('alt', 'export-icon');
-	popupButtonU1.appendChild(popupButtonImage1);
+  // --- --- --- Button Image 1
+  let popupButtonImage1 = document.createElement('img');
+  popupButtonImage1.setAttribute('src', './images/export-icon.svg');
+  popupButtonImage1.setAttribute('alt', 'export-icon');
+  popupButtonU1.appendChild(popupButtonImage1);
 
-	// --- --- --- Button Image 2
-	let popupButtonImage2 = document.createElement('img');
-	popupButtonImage2.setAttribute('src', './images/github-icon-2.svg');
-	popupButtonImage2.setAttribute('alt', 'github-icon');
-	popupButtonU2.appendChild(popupButtonImage2);
-	
+  // --- --- --- Button Image 2
+  let popupButtonImage2 = document.createElement('img');
+  popupButtonImage2.setAttribute('src', './images/github-icon-2.svg');
+  popupButtonImage2.setAttribute('alt', 'github-icon');
+  popupButtonU2.appendChild(popupButtonImage2);
+  
 
-	// --- Technologies Container
-	const popUpList = document.createElement('ul');
-	popUpList.classList.add('proj-languages');
-	popUpList.classList.add('proj-languages-j-start');
-	projPopCon.appendChild(popUpList);
+  // --- Technologies Container
+  const popUpList = document.createElement('ul');
+  popUpList.classList.add('proj-languages');
+  popUpList.classList.add('proj-languages-j-start');
+  projPopCon.appendChild(popUpList);
 
-	// --- --- Technologies
-	for (let i = 0; i < projectInfoArray[3].length; i++) {
-		const popupTechno = document.createElement('li');
-		text = document.createTextNode(projectInfoArray[3][i]);
-		popupTechno.appendChild(text);
-		popUpList.appendChild(popupTechno);
-	}
+  // --- --- Technologies
+  for (let i = 0; i < projectInfoArray[3].length; i++) {
+    const popupTechno = document.createElement('li');
+    text = document.createTextNode(projectInfoArray[3][i]);
+    popupTechno.appendChild(text);
+    popUpList.appendChild(popupTechno);
+  }
 
-	// --- Description
-	const popupDescription = document.createElement('p');
-	popupDescription.classList.add('project-popup-description');
-	text = document.createTextNode(projectInfoArray[1]);
-	popupDescription.appendChild(text);
-	projPopCon.appendChild(popupDescription);
+  // --- Description
+  const popupDescription = document.createElement('p');
+  popupDescription.classList.add('project-popup-description');
+  text = document.createTextNode(projectInfoArray[1]);
+  popupDescription.appendChild(text);
+  projPopCon.appendChild(popupDescription);
 
-	// --- Buttons Container
-	const popupButtonContainer = document.createElement('div');
-	popupButtonContainer.classList.add('popup-button-container');
-	popupButtonContainer.classList.add('bottom-button-container');
-	projPopCon.appendChild(popupButtonContainer);
+  // --- Buttons Container
+  const popupButtonContainer = document.createElement('div');
+  popupButtonContainer.classList.add('popup-button-container');
+  popupButtonContainer.classList.add('bottom-button-container');
+  projPopCon.appendChild(popupButtonContainer);
 
-	// --- --- Buttons
-	const popupButton1 = document.createElement('a');
-	popupButton1.classList.add('proj-button');
-	popupButton1.setAttribute('href', projectInfoArray[4]);
-	text = document.createTextNode('See Live');
-	popupButton1.appendChild(text);
-	popupButtonContainer.appendChild(popupButton1);
+  // --- --- Buttons
+  const popupButton1 = document.createElement('a');
+  popupButton1.classList.add('proj-button');
+  popupButton1.setAttribute('href', projectInfoArray[4]);
+  text = document.createTextNode('See Live');
+  popupButton1.appendChild(text);
+  popupButtonContainer.appendChild(popupButton1);
 
-	const popupButton2 = document.createElement('a');
-	popupButton2.classList.add('proj-button');
-	popupButton2.setAttribute('href', projectInfoArray[5]);
-	text = document.createTextNode('See Source');
-	popupButton2.appendChild(text);
-	popupButtonContainer.appendChild(popupButton2);
+  const popupButton2 = document.createElement('a');
+  popupButton2.classList.add('proj-button');
+  popupButton2.setAttribute('href', projectInfoArray[5]);
+  text = document.createTextNode('See Source');
+  popupButton2.appendChild(text);
+  popupButtonContainer.appendChild(popupButton2);
 
-	// --- --- --- Button Image 1
-	popupButtonImage1 = document.createElement('img');
-	popupButtonImage1.setAttribute('src', './images/export-icon.svg');
-	popupButtonImage1.setAttribute('alt', 'export-icon');
-	popupButton1.appendChild(popupButtonImage1);
+  // --- --- --- Button Image 1
+  popupButtonImage1 = document.createElement('img');
+  popupButtonImage1.setAttribute('src', './images/export-icon.svg');
+  popupButtonImage1.setAttribute('alt', 'export-icon');
+  popupButton1.appendChild(popupButtonImage1);
 
-	// --- --- --- Button Image 2
-	popupButtonImage2 = document.createElement('img');
-	popupButtonImage2.setAttribute('src', './images/github-icon-2.svg');
-	popupButtonImage2.setAttribute('alt', 'github-icon');
-	popupButton2.appendChild(popupButtonImage2);
+  // --- --- --- Button Image 2
+  popupButtonImage2 = document.createElement('img');
+  popupButtonImage2.setAttribute('src', './images/github-icon-2.svg');
+  popupButtonImage2.setAttribute('alt', 'github-icon');
+  popupButton2.appendChild(popupButtonImage2);
 
-	// APPEND IN PROJECT
-	projects[i].appendChild(projPopup);
+  // APPEND IN PROJECT
+  projects[i].appendChild(projPopup);
 }
 
 const projectButton1 = document.querySelector('#button-project-1');
@@ -191,27 +191,27 @@ const projectButton6 = document.querySelector('#button-project-6');
 const popup6 = document.getElementById('project-6-popup');
 
 projectButton1.onclick = function() {
-	popup1.classList.toggle('project-popup-toggle');
+  popup1.classList.toggle('project-popup-toggle');
 };
 
 projectButton2.onclick = function() {
-	popup2.classList.toggle('project-popup-toggle');
+  popup2.classList.toggle('project-popup-toggle');
 };
 
 projectButton3.onclick = function() {
-	popup3.classList.toggle('project-popup-toggle');
+  popup3.classList.toggle('project-popup-toggle');
 };
 
 projectButton4.onclick = function() {
-	popup4.classList.toggle('project-popup-toggle');
+  popup4.classList.toggle('project-popup-toggle');
 };
 
 projectButton5.onclick = function() {
-	popup5.classList.toggle('project-popup-toggle');
+  popup5.classList.toggle('project-popup-toggle');
 };
 
 projectButton6.onclick = function() {
-	popup6.classList.toggle('project-popup-toggle');
+  popup6.classList.toggle('project-popup-toggle');
 };
 
 const projectCrossButton1 = document.querySelector('#project-cross-1');
@@ -223,25 +223,25 @@ const projectCrossButton6 = document.querySelector('#project-cross-6');
 
 
 projectCrossButton1.onclick = function() {
-	popup1.classList.toggle('project-popup-toggle');
+  popup1.classList.toggle('project-popup-toggle');
 };
 
 projectCrossButton2.onclick = function() {
-	popup2.classList.toggle('project-popup-toggle');
+  popup2.classList.toggle('project-popup-toggle');
 };
 
 projectCrossButton3.onclick = function() {
-	popup3.classList.toggle('project-popup-toggle');
+  popup3.classList.toggle('project-popup-toggle');
 };
 
 projectCrossButton4.onclick = function() {
-	popup4.classList.toggle('project-popup-toggle');
+  popup4.classList.toggle('project-popup-toggle');
 };
 
 projectCrossButton5.onclick = function() {
-	popup5.classList.toggle('project-popup-toggle');
+  popup5.classList.toggle('project-popup-toggle');
 };
 
 projectCrossButton6.onclick = function() {
-	popup6.classList.toggle('project-popup-toggle');
+  popup6.classList.toggle('project-popup-toggle');
 };
