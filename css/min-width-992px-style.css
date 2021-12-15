@@ -45,9 +45,36 @@
   justify-content: center;
 }
 
+.proj-languages-j-start {
+  justify-content: flex-start !important;
+}
+
 .proj-languages > * {
   font-size: 14px;
   margin: 3px;
+}
+
+.upper-button-container {
+  display: flex !important;
+  justify-content: flex-end;
+}
+
+.upper-button-container > * {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.popup-title-buttons-container {
+  display: flex;
+}
+
+.popup-button-container {
+  flex-basis: 35vw;
+  align-items: center;
+}
+
+.bottom-button-container {
+  display: none;
 }
 
 .about-me-text {
