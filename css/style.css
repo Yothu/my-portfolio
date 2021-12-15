@@ -10,7 +10,6 @@ body {
 }
 
 /* MAIN-SECTION */
-
 .hole-page {
   display: flex;
   flex-direction: column;
@@ -99,7 +98,6 @@ body {
 }
 
 /* PROJECTS-SECTION */
-
 .work {
   display: grid;
   grid-template-columns: auto;
@@ -261,7 +259,6 @@ body {
 }
 
 /* ABOUT-ME-SECTION */
-
 .about-me {
   display: grid;
   grid-template-columns: auto;
@@ -384,7 +381,6 @@ body {
 }
 
 /* CONTACT-SECTION */
-
 .contact {
   display: flex;
   flex-wrap: wrap;
@@ -451,6 +447,29 @@ body {
   flex-basis: 80%;
 }
 
+.submit-error-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.form-error-message {
+  background-color: #ebf0ee;
+  border: 2px solid #d0d9d4;
+  border-radius: 3px;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
 #submit {
   background-color: #36b37f;
   color: #fff;
@@ -473,7 +492,6 @@ body {
 }
 
 /* MEDIA-QUERIES */
-
 @media screen and (max-width: 767px) {
   .pop-menu {
     display: none;

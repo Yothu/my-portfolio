@@ -217,6 +217,7 @@ for (let i = 0; i < projects.length; i += 1) {
   projects[i].appendChild(projPopup);
 }
 
+// OPEN POPUP BUTTONS
 const projectButton1 = document.querySelector('#button-project-1');
 const popup1 = document.getElementById('project-1-popup');
 
@@ -259,6 +260,7 @@ projectButton6.onclick = function openProject6() {
   popup6.classList.toggle('project-popup-toggle');
 };
 
+// CLOSE POPUP BUTTONS
 const projectCrossButton1 = document.querySelector('#project-cross-1');
 const projectCrossButton2 = document.querySelector('#project-cross-2');
 const projectCrossButton3 = document.querySelector('#project-cross-3');
@@ -288,4 +290,30 @@ projectCrossButton5.onclick = function closeProject5() {
 
 projectCrossButton6.onclick = function closeProject6() {
   popup6.classList.toggle('project-popup-toggle');
+};
+
+function upperCaseErrorMessage() {
+  const messageContainer = document.getElementById('submit-form-error-message');
+  messageContainer.innerHTML = '<b>Error</b>: Email contains Uppercase characters.<br>All letters must be Lowercase.<br>Form was NOT SENT.';
+}
+
+function checkEmailUppercase() {
+  let contactEmailValue = document.getElementById('contact-email').value;
+  contactEmailValue = contactEmailValue.split('');
+
+  for (let i = 0; i < contactEmailValue.length; i += 1) {
+    if (contactEmailValue[i].match(/[a-z]/i)) {
+      if (contactEmailValue[i] === contactEmailValue[i].toUpperCase()) {
+        const errorContainer = document.getElementById('submit-form-error-message');
+        errorContainer.classList.toggle('hide');
+        upperCaseErrorMessage();
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+document.getElementById('contact-me-form').onsubmit = function () {
+  return checkEmailUppercase();
 };
