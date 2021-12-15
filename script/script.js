@@ -31,7 +31,6 @@ const projectsArray = [
     live: 'https://yothu.github.io/my-portfolio/',
     source: 'https://github.com/Yothu/my-portfolio',
   },
-  
   projectInfo2 = {
     title: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
@@ -40,7 +39,6 @@ const projectsArray = [
     live: 'https://yothu.github.io/my-portfolio/',
     source: 'https://github.com/Yothu/my-portfolio',
   },
-  
   projectInfo3 = {
     title: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
@@ -49,7 +47,6 @@ const projectsArray = [
     live: 'https://yothu.github.io/my-portfolio/',
     source: 'https://github.com/Yothu/my-portfolio',
   },
-  
   projectInfo4 = {
     title: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
@@ -58,7 +55,6 @@ const projectsArray = [
     live: 'https://yothu.github.io/my-portfolio/',
     source: 'https://github.com/Yothu/my-portfolio',
   },
-  
   projectInfo5 = {
     title: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
@@ -67,7 +63,6 @@ const projectsArray = [
     live: 'https://yothu.github.io/my-portfolio/',
     source: 'https://github.com/Yothu/my-portfolio',
   },
-  
   projectInfo6 = {
     title: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
