@@ -314,6 +314,50 @@ function checkEmailUppercase() {
   return true;
 }
 
-document.getElementById('contact-me-form').onsubmit = function () {
+document.getElementById('contact-me-form').onsubmit = function checkMailUpper() {
   return checkEmailUppercase();
 };
+
+function contactLocalStor() {
+  const contactFormData = {
+    name: document.getElementById('contact-name').value,
+    email: document.getElementById('contact-email').value,
+    message: document.getElementById('contact-message').value,
+  };
+
+  localStorage.setItem('contactInfo', JSON.stringify(contactFormData));
+}
+
+document.getElementById('contact-name').onchange = function saveLocalByName() {
+  return contactLocalStor();
+};
+
+document.getElementById('contact-email').onchange = function saveLocalByEmail() {
+  return contactLocalStor();
+};
+
+document.getElementById('contact-message').onchange = function saveLocalByMessage() {
+  return contactLocalStor();
+};
+
+const localObj = localStorage.getItem('contactInfo');
+
+if (localObj) {
+  const localName = JSON.parse(localObj).name;
+  const localEmail = JSON.parse(localObj).email;
+  const localMessage = JSON.parse(localObj).message;
+  if (localName) {
+    const nameid = document.getElementById('contact-name');
+    nameid.value = JSON.parse(localObj).name;
+  }
+
+  if (localEmail) {
+    const emailid = document.getElementById('contact-email');
+    emailid.value = JSON.parse(localObj).email;
+  }
+
+  if (localMessage) {
+    const messageid = document.getElementById('contact-message');
+    messageid.value = JSON.parse(localObj).message;
+  }
+}
