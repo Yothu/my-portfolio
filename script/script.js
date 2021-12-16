@@ -318,3 +318,23 @@ document.getElementById('contact-me-form').onsubmit = function checkMailUpper() 
   return checkEmailUppercase();
 };
 
+function localStor(idElement, localVariable) {
+  contactFormData[localVariable] = document.getElementById(idElement).value;
+
+  // localStorage.setItem('contactInfo', 'local');
+  // sessionStorage.setItem('contactInfo', 'session');
+
+  localStorage.setItem('contactInfo', JSON.stringify(contactFormData));
+  sessionStorage.setItem('contactInfo', JSON.stringify(contactFormData));
+
+
+  const localObj = localStorage.getItem('contactInfo');
+  const sessionObj = sessionStorage.getItem('contactInfo');
+
+  console.log('DATA:', contactFormData);
+  console.log('Local:', JSON.parse(localObj));
+  console.log('Session:', JSON.parse(sessionObj));
+
+  // console.log('Local:',localObj);
+  // console.log('Session:',sessionObj);
+}
