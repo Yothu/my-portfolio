@@ -314,6 +314,7 @@ function checkEmailUppercase() {
   return true;
 }
 
-document.getElementById('contact-me-form').onsubmit = function () {
+document.getElementById('contact-me-form').onsubmit = function checkMailUpper() {
   return checkEmailUppercase();
 };
+
