@@ -234,12 +234,12 @@
     </p>
     <form id="contact-me-form" class="data-form" action="https://formspree.io/f/mjvlbpay" method="post" onsubmit="return checkEmailUppercase();">
       <label for="contact-name">
-        <input type="text" class="contact-form" id="contact-name" name="contact-name" placeholder="Full name" maxlength="30" required>
+        <input onchange="contactLocalStor();" type="text" class="contact-form" id="contact-name" name="contact-name" placeholder="Full name" maxlength="30" required>
       </label>
       <label for="contact-email">
-        <input type="email" class="contact-form" id="contact-email" name="contact-email" placeholder="Email address" required>
+        <input onchange="contactLocalStor();" type="email" class="contact-form" id="contact-email" name="contact-email" placeholder="Email address" required>
       </label>
-      <textarea class="contact-form" id="contact-message" name="contact-message" placeholder="Type something" maxlength="500" required></textarea>
+      <textarea onchange="contactLocalStor();" class="contact-form" id="contact-message" name="contact-message" placeholder="Type something" maxlength="500" required></textarea>
         <div id="form-submit-error" class="submit-error-container">
           <button type="submit" id="submit">Get in touch</button>
           <p id="submit-form-error-message" class="form-error-message hide"></p>

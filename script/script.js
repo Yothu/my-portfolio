@@ -318,23 +318,46 @@ document.getElementById('contact-me-form').onsubmit = function checkMailUpper() 
   return checkEmailUppercase();
 };
 
-function localStor(idElement, localVariable) {
-  contactFormData[localVariable] = document.getElementById(idElement).value;
-
-  // localStorage.setItem('contactInfo', 'local');
-  // sessionStorage.setItem('contactInfo', 'session');
+function contactLocalStor() {
+  const contactFormData = {
+    name: document.getElementById('contact-name').value,
+    email: document.getElementById('contact-email').value,
+    message: document.getElementById('contact-message').value,
+  };
 
   localStorage.setItem('contactInfo', JSON.stringify(contactFormData));
-  sessionStorage.setItem('contactInfo', JSON.stringify(contactFormData));
+}
 
+document.getElementById('contact-name').onchange = function saveLocalByName() {
+  return contactLocalStor();
+};
 
-  const localObj = localStorage.getItem('contactInfo');
-  const sessionObj = sessionStorage.getItem('contactInfo');
+document.getElementById('contact-email').onchange = function saveLocalByEmail() {
+  return contactLocalStor();
+};
 
-  console.log('DATA:', contactFormData);
-  console.log('Local:', JSON.parse(localObj));
-  console.log('Session:', JSON.parse(sessionObj));
+document.getElementById('contact-message').onchange = function saveLocalByMessage() {
+  return contactLocalStor();
+};
 
-  // console.log('Local:',localObj);
-  // console.log('Session:',sessionObj);
+const localObj = localStorage.getItem('contactInfo');
+
+if (localObj) {
+  const localName = JSON.parse(localObj).name;
+  const localEmail = JSON.parse(localObj).email;
+  const localMessage = JSON.parse(localObj).message;
+  if (localName) {
+    const nameid = document.getElementById('contact-name');
+    nameid.value = JSON.parse(localObj).name;
+  }
+
+  if (localEmail) {
+    const emailid = document.getElementById('contact-email');
+    emailid.value = JSON.parse(localObj).email;
+  }
+
+  if (localMessage) {
+    const messageid = document.getElementById('contact-message');
+    messageid.value = JSON.parse(localObj).message;
+  }
 }
