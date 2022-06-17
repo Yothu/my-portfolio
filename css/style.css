@@ -179,6 +179,7 @@ body {
   text-align: center;
   justify-content: center;
   text-decoration: none;
+  margin-bottom: 1rem;
 }
 
 .proj-button:hover {

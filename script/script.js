@@ -16,12 +16,12 @@ innerButtons.forEach((item) => {
 
 /* OBJETS STORING INFORMATION */
 const projectInfo1 = {
-  title: 'Keeping track of hundreds of components',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['Ruby on rails', 'css', 'JavaScript'],
-  image: '../images/project-image.svg',
-  live: 'https://yothu.github.io/my-portfolio/',
-  source: 'https://github.com/Yothu/my-portfolio',
+  title: 'Reservify',
+  description: 'A hotel reservation app displays all the existing hotels and details of each hotel, allowing the user to reserve the hotel they want.',
+  technologies: ['Ruby on rails', 'React', 'Redux', 'Sass', 'HTML', 'CSS'],
+  image: '../images/projects/reservify-image.png',
+  live: 'https://reservify.netlify.app/',
+  source: 'https://github.com/Yothu/reservify-front-end',
 };
 
 const projectInfo2 = {
